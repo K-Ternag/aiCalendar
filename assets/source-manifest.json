@@ -1,0 +1,275 @@
+{
+  "captured": "2026-10-04",
+  "png_count": 29,
+  "synthetic_data_only": true,
+  "live_chatgpt_verified": false,
+  "physical_device_verified": false,
+  "capture_checks": {
+    "UserGuideCaptureUiTest": "passed",
+    "UserGuideFeatureCaptureUiTest": "passed"
+  },
+  "app_apk_sha256": "5771293c956c08c672eda4582ecb86c8776d53ead1a4f8b42129ede3efb9d4c0",
+  "images": [
+    {
+      "file": "images/01-calendar.png",
+      "group": "캘린더",
+      "title": "월간 캘린더",
+      "caption": "날짜별 일정과 개인·가족·업무 분류를 한눈에 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "eae4bb0404c7caf124496804d0ccfc840c1c4f17b8756b37dfafaf09d27505eb"
+    },
+    {
+      "file": "images/02-add-menu.png",
+      "group": "일정 등록",
+      "title": "일정 추가 메뉴",
+      "caption": "+ 버튼을 눌러 사진 등록 또는 직접 입력·붙여넣기를 선택합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "b47eb5daf8a4e02a3ec0f51cda5f537d2ff1202c29c5f5302bc2eee821f7672f"
+    },
+    {
+      "file": "images/03-first-ai-choice.png",
+      "group": "일정 등록",
+      "title": "처음 등록할 때 AI 선택",
+      "caption": "AI 사용 여부를 먼저 선택합니다. 선택은 다음 등록에도 적용됩니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "1d3fa4234ad47a60bcde4b36d4b9b5a94cd28d50e5604adece8771bb4f786d58"
+    },
+    {
+      "file": "images/04-day-schedule.png",
+      "group": "일정 관리",
+      "title": "선택한 날짜의 일정",
+      "caption": "날짜를 누르면 해당 날짜의 일정 목록과 삭제 버튼이 표시됩니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "69bd735eb345b7fed61001846f8f8fa5a570b14706b8d929f2a399a45714f6e2"
+    },
+    {
+      "file": "images/05-delete-confirmation.png",
+      "group": "일정 관리",
+      "title": "일정 삭제 확인",
+      "caption": "삭제할 일정의 제목을 확인한 뒤 삭제하거나 취소합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "1ac63b03bd09fb7877d4246981ba6639325995e2830415cf0d179b6826af5f88"
+    },
+    {
+      "file": "images/06-event-detail.png",
+      "group": "일정 관리",
+      "title": "일정 상세",
+      "caption": "일시·분류·장소·메모와 준비물을 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "231e0052c872d82950a2bbd7aa84f4be5f1011d729071bad9b7611c958577536"
+    },
+    {
+      "file": "images/07-checklist.png",
+      "group": "준비물·공유",
+      "title": "준비물 체크리스트",
+      "caption": "챙긴 준비물을 체크하고 일정 공유를 열 수 있습니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "014eba6edb9de9697151e287afd3a8f08fad4229e5a6be66dabe5e1ca5a299ff"
+    },
+    {
+      "file": "images/08-share-preview.png",
+      "group": "준비물·공유",
+      "title": "일정 공유 미리보기",
+      "caption": "일정을 텍스트 또는 이미지 카드로 공유합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "21c584bcd9f3c05adcc4e2754cde511f111a38f9587c564c2e1f70e43be896bb"
+    },
+    {
+      "file": "images/09-share-card.png",
+      "group": "준비물·공유",
+      "title": "공유 카드 원본",
+      "caption": "앱이 실제로 생성한 공유 카드 이미지입니다.",
+      "width": 1080,
+      "height": 1216,
+      "sha256": "800fd938c69a734d9f53434dc50694b4f7ff7b102a8761270672338d8a5c149e"
+    },
+    {
+      "file": "images/10-manual-entry.png",
+      "group": "일정 등록",
+      "title": "직접 일정 입력",
+      "caption": "제목과 날짜·시간을 직접 입력한 뒤 저장합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "505108cc347fbf9ae3dda3683be0f6c820ed24db21c70fdb6a9f94bb8057a2d2"
+    },
+    {
+      "file": "images/11-extra-options.png",
+      "group": "일정 등록",
+      "title": "일정의 추가 항목",
+      "caption": "장소·반복·분류·메모·준비물·알림을 추가로 설정합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "564a1a9c0b8ca0eabc57d279a957f4007d0224e11f504a63df6677a2f28aa849"
+    },
+    {
+      "file": "images/12-inbox.png",
+      "group": "카카오톡",
+      "title": "카카오톡 수집함",
+      "caption": "필터에 맞아 보관된 원문을 확인하고 일정 등록을 시작합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "963b7c54270bc527403c99e899f5a0e2a6bc9f3be685485c48c281b65b78ac7c"
+    },
+    {
+      "file": "images/13-original-message.png",
+      "group": "카카오톡",
+      "title": "보관한 원문 펼치기",
+      "caption": "원문을 펼쳐 날짜·시간·장소·준비물을 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "b0c9291d8ab70fd3cc5df639832b42496921d4af69a4463b61b4615e68776d28"
+    },
+    {
+      "file": "images/14-review-before-saving.png",
+      "group": "카카오톡",
+      "title": "등록 전 일정 확인",
+      "caption": "원문에서 채운 내용을 검토하고 저장해야 일정이 등록됩니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "fda8be29fe455fcbbd31b4ca14924306dd8d18a3422149095f16c2e7586f3f23"
+    },
+    {
+      "file": "images/15-kakao-settings.png",
+      "group": "카카오톡",
+      "title": "카카오톡 수집 설정",
+      "caption": "자동수집 상태와 알림 접근 권한, 모아볼 메시지 조건을 관리합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "5ff77afcad08c5bc19d5d1d7d1592e5514b3c26b53b5c0bbdc3182d3a7663f88"
+    },
+    {
+      "file": "images/16-kakao-filter.png",
+      "group": "카카오톡",
+      "title": "채팅방·발신자 필터",
+      "caption": "채팅방 또는 보낸 사람 이름을 설정합니다. 날짜·시간 조건은 선택입니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "456c228366b5d70e228f5dc7e94d8fb0f89c5f817bc1c8a75f77a1354594bed0"
+    },
+    {
+      "file": "images/17-today-briefing.png",
+      "group": "브리핑",
+      "title": "오늘 브리핑",
+      "caption": "오늘 등록된 일정을 시간 순서로 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "489082ff361577dc80f9258e192ffe10436256c3b852bfcce92dc440711055c9"
+    },
+    {
+      "file": "images/18-week-briefing.png",
+      "group": "브리핑",
+      "title": "이번 주 브리핑",
+      "caption": "이번 주에 등록된 일정을 모아 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "472ce8dbdfae1fc949608ec1e85d63398f9dee2d5a581d52530aeb7bd2e3a900"
+    },
+    {
+      "file": "images/19-settings.png",
+      "group": "설정",
+      "title": "설정 목록",
+      "caption": "AI·카카오톡·일정 알림·디자인·공휴일·메시지 보관을 관리합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "edfcafc9af9efd7e67fb37a91d5e92a8716ddb33fe70a3b32141bb5d32fb1324"
+    },
+    {
+      "file": "images/20-reminder-settings.png",
+      "group": "설정",
+      "title": "일정 알림 설정",
+      "caption": "새 일정의 기본 알림과 알림 표시·정확한 시각 권한을 확인합니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "e76de2411eff9426780979edde230b2e93723375d07a881866d4c9eee5acfeb6"
+    },
+    {
+      "file": "images/21-design-picker.png",
+      "group": "설정",
+      "title": "화면 디자인 선택",
+      "caption": "세 가지 디자인을 미리 보고 원하는 스타일을 고릅니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "a8216bb00ef74ca7803652f9a9627e29ec9853fef9fbf4324dbf29f7ed9ad9a1"
+    },
+    {
+      "file": "images/26-photo-candidates.png",
+      "group": "사진·여러 일정",
+      "title": "사진에서 찾은 일정 후보",
+      "caption": "사진 등록의 일정 후보 확인 화면입니다. 합성 입력으로 구성한 예시입니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "00ab4f505fb0098c378a4c96f3c7a05cc1897517539c8602017c73867d832885"
+    },
+    {
+      "file": "images/27-photo-example.png",
+      "group": "사진·여러 일정",
+      "title": "사진 등록용 예시 안내문",
+      "caption": "후보 확인 화면에 사용한 합성 안내문 원본입니다. 앱 화면 캡처는 아닙니다.",
+      "width": 1400,
+      "height": 680,
+      "sha256": "be58b22d43b34af1a6a3f20e6b7c41c836480672894c5406a6088e6b3f237275"
+    },
+    {
+      "file": "images/28-multiple-candidates.png",
+      "group": "사진·여러 일정",
+      "title": "여러 일정 선택·검토",
+      "caption": "등록할 후보를 선택하고 수정한 뒤 선택한 일정만 저장합니다. AI 응답 예시가 아닙니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "d081db85d01aae20f8ff214542b41ac591dbc069d74eca17256d890115d39d17"
+    },
+    {
+      "file": "images/design-soft_minimalism-calendar.png",
+      "group": "다른 디자인",
+      "title": "Soft Minimalism 캘린더",
+      "caption": "같은 예시 일정으로 확인한 부드러운 디자인입니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "4358d3b6d6649edde0c574eaccd8a9015e64b089127849d0d416667f313317d0"
+    },
+    {
+      "file": "images/design-material_3-calendar.png",
+      "group": "다른 디자인",
+      "title": "Material Design 3 캘린더",
+      "caption": "같은 예시 일정으로 확인한 Android 스타일 디자인입니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "8062758a6bceab2e85a75f170af28d4428c59505335c178de57026c3113f2f7b"
+    },
+    {
+      "file": "images/widget-today.png",
+      "group": "위젯",
+      "title": "오늘 일정 위젯",
+      "caption": "앱의 실제 위젯 레이아웃을 예시 일정으로 렌더링했습니다.",
+      "width": 1050,
+      "height": 540,
+      "sha256": "ee0a8862815f9c74827c4e73f1c5a2e31de2cf983b1d39b81f4be83cd0d987d6"
+    },
+    {
+      "file": "images/widget-upcoming.png",
+      "group": "위젯",
+      "title": "일정 목록 위젯",
+      "caption": "오늘 또는 다가오는 일정 목록을 보여주는 실제 위젯 레이아웃입니다.",
+      "width": 1050,
+      "height": 720,
+      "sha256": "a09b621c6eff4df5ac15ddaf3e657c6e81a71819d5f8601c5d5867170098578e"
+    },
+    {
+      "file": "images/widget-month.png",
+      "group": "위젯",
+      "title": "월간 캘린더 위젯",
+      "caption": "달력과 선택한 날짜의 일정을 보여주는 실제 위젯 레이아웃입니다.",
+      "width": 1050,
+      "height": 1230,
+      "sha256": "307ae96ee73b090d561a590a3c398a6672880b8cb0e8452329705dcdf30f5807"
+    }
+  ]
+}
