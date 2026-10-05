@@ -3,12 +3,12 @@
   "use strict";
   const english = {
     choiceLocalTitle:"Internal AI model",
-    choiceLocalBody:"Download the approximately 400MB model once to analyze school notices on your device without internet access. Prepare events and stated supplies without a ChatGPT connection or subscription.",
+    choiceLocalBody:"Download the approximately 1GB model once to analyze school notices on your device without internet access. Prepare events and stated supplies without a ChatGPT connection or subscription.",
     choiceLocalTag:"On-device analysis",
     faqLocalQuestion:"How do the internal AI model and ChatGPT differ?",
-    faqLocalAnswer:"The internal AI model needs a one-time download of approximately 400MB, then analyzes on your device without internet access. It reads text from photos on your device and extracts only events and supplies stated in the original, without extra preparation suggestions. ChatGPT sends selected images or text to OpenAI for analysis and can suggest extra things to bring when you tap the separate action. Both methods require your review and explicit saving.",
+    faqLocalAnswer:"The internal AI model needs a one-time download of approximately 1GB, then analyzes on your device without internet access. It reads text from photos on your device and extracts only events and supplies stated in the original, without extra preparation suggestions. ChatGPT sends selected images or text to OpenAI for analysis and can suggest extra things to bring when you tap the separate action. Both methods require your review and explicit saving.",
     dataInternalTitle:"02 · Internal AI model analysis",
-    dataInternalBody:"The internal AI model runs on your device after a one-time download of approximately 400MB. The initial download requires internet access; subsequent analysis works without internet access, a ChatGPT connection or a subscription. Selected text and text read from photos are processed on your device, without sending the original analysis input to an external server.",
+    dataInternalBody:"The internal AI model runs on your device after a one-time download of approximately 1GB. The initial download requires internet access; subsequent analysis works without internet access, a ChatGPT connection or a subscription. Selected text and text read from photos are processed on your device, without sending the original analysis input to an external server.",
     dataInternalBody2:"Photos are read as text on your device before the internal AI model analyzes them. It extracts only events and supplies stated in the original and does not suggest extra things to bring. Review, edit and explicitly save the results to register events. You can turn AI off or delete the model file in Settings; saved events remain.",
     faqSchoolQuestion:"What kinds of children's plans can I manage?",
     faqSchoolAnswer:"Use it to organize school notices for events such as sports days, school trips and parent-teacher meetings. Bring in a notice photo or a teacher or parent message, then review and save the events you need. Notices vary, so the parent checks the dates, times and things to bring.",

@@ -256,13 +256,13 @@ window.CALENDAR_GALLERY = [
     "file": "25-internal-ai-download.png",
     "ko": "내부 AI 모델 다운로드",
     "en": "Internal AI model download",
-    "captionKo": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 400MB 다운로드 안내입니다.",
-    "captionEn": "Download the approximately 400MB internal AI model to analyze on your device without a ChatGPT subscription.",
+    "captionKo": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 1GB 다운로드 안내입니다.",
+    "captionEn": "Download the approximately 1GB internal AI model to analyze on your device without a ChatGPT subscription.",
     "groupKo": "AI 설정",
     "groupEn": "AI settings",
     "category": "ai",
-    "width": 1170,
-    "height": 2532
+    "width": 852,
+    "height": 1846
   },
   {
     "file": "26-photo-candidates.png",

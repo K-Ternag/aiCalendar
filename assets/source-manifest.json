@@ -203,10 +203,16 @@
       "file": "images/25-internal-ai-download.png",
       "group": "AI 설정",
       "title": "내부 AI 모델 다운로드",
-      "caption": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 400MB 다운로드 안내입니다.",
-      "width": 1170,
-      "height": 2532,
-      "sha256": "3a79bad8708be85e00e45d9a8276614ac067cc7fac473e2a977ee3ed38f0723e"
+      "caption": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 1GB 다운로드 안내입니다.",
+      "width": 852,
+      "height": 1846,
+      "sha256": "2059e5bbf41307c78f426d6d1494fc2a5a231cbc41de50cd008dbc8c0ff49ba0",
+      "edit": {
+        "date": "2026-10-05",
+        "tool": "image_gen",
+        "description": "Model download label updated from approximately 400MB to 1GB.",
+        "original_sha256": "3a79bad8708be85e00e45d9a8276614ac067cc7fac473e2a977ee3ed38f0723e"
+      }
     },
     {
       "file": "images/26-photo-candidates.png",

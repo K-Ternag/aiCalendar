@@ -25,7 +25,7 @@ EN = [
     ("Settings overview", "Manage AI, KakaoTalk, reminders, design, holidays and message retention."),
     ("Reminder settings", "Check default reminders, notification permission and exact-time access."),
     ("Choose a screen design", "Preview three designs and choose your preferred style."),
-    ("Internal AI model download", "Download the approximately 400MB internal AI model to analyze on your device without a ChatGPT subscription."),
+    ("Internal AI model download", "Download the approximately 1GB internal AI model to analyze on your device without a ChatGPT subscription."),
     ("Event drafts from a photo", "The photo-entry draft review screen, populated with synthetic example input."),
     ("Illustrative source notice", "A synthetic notice used as photo input. This is not an app screenshot."),
     ("Select and review multiple events", "Choose and edit drafts, then save selected events. This is not a live AI response."),
