@@ -25,6 +25,7 @@ EN = [
     ("Settings overview", "Manage AI, KakaoTalk, reminders, design, holidays and message retention."),
     ("Reminder settings", "Check default reminders, notification permission and exact-time access."),
     ("Choose a screen design", "Preview three designs and choose your preferred style."),
+    ("Internal AI model download", "Download the approximately 400MB internal AI model to analyze on your device without a ChatGPT subscription."),
     ("Event drafts from a photo", "The photo-entry draft review screen, populated with synthetic example input."),
     ("Illustrative source notice", "A synthetic notice used as photo input. This is not an app screenshot."),
     ("Select and review multiple events", "Choose and edit drafts, then save selected events. This is not a live AI response."),
@@ -42,7 +43,7 @@ def main():
     gallery = []
     for source, (title, caption) in zip(manifest["images"], EN):
         group = source["group"]
-        category = "ai" if Path(source["file"]).name == "03-first-ai-choice.png" else "calendar" if group in ("캘린더", "다른 디자인", "위젯") else "entry" if group in ("일정 등록", "일정 관리", "사진·여러 일정") else "daily"
+        category = "ai" if Path(source["file"]).name == "03-first-ai-choice.png" or group == "AI 설정" else "calendar" if group in ("캘린더", "다른 디자인", "위젯") else "entry" if group in ("일정 등록", "일정 관리", "사진·여러 일정") else "daily"
         gallery.append({"file": Path(source["file"]).name, "ko": source["title"], "en": title, "captionKo": source["caption"], "captionEn": caption, "groupKo": group, "groupEn": GROUPS[group], "category": category, "width": source["width"], "height": source["height"]})
     (ROOT / "assets/gallery-data.js").write_text("/* Supplied app images; synthetic example data only. */\nwindow.CALENDAR_GALLERY = " + json.dumps(gallery, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
     print(f"Prepared {len(gallery)} bilingual gallery entries.")

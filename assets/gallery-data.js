@@ -253,6 +253,18 @@ window.CALENDAR_GALLERY = [
     "height": 2532
   },
   {
+    "file": "25-internal-ai-download.png",
+    "ko": "내부 AI 모델 다운로드",
+    "en": "Internal AI model download",
+    "captionKo": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 400MB 다운로드 안내입니다.",
+    "captionEn": "Download the approximately 400MB internal AI model to analyze on your device without a ChatGPT subscription.",
+    "groupKo": "AI 설정",
+    "groupEn": "AI settings",
+    "category": "ai",
+    "width": 1170,
+    "height": 2532
+  },
+  {
     "file": "26-photo-candidates.png",
     "ko": "사진에서 찾은 일정 후보",
     "en": "Event drafts from a photo",

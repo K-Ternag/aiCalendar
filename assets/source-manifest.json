@@ -1,6 +1,6 @@
 {
   "captured": "2026-10-04",
-  "png_count": 29,
+  "png_count": 30,
   "synthetic_data_only": true,
   "live_chatgpt_verified": false,
   "physical_device_verified": false,
@@ -198,6 +198,15 @@
       "width": 1170,
       "height": 2532,
       "sha256": "a8216bb00ef74ca7803652f9a9627e29ec9853fef9fbf4324dbf29f7ed9ad9a1"
+    },
+    {
+      "file": "images/25-internal-ai-download.png",
+      "group": "AI 설정",
+      "title": "내부 AI 모델 다운로드",
+      "caption": "ChatGPT 구독 없이 사용할 수 있는 내부 AI 모델의 약 400MB 다운로드 안내입니다.",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "3a79bad8708be85e00e45d9a8276614ac067cc7fac473e2a977ee3ed38f0723e"
     },
     {
       "file": "images/26-photo-candidates.png",
