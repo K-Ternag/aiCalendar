@@ -75,7 +75,7 @@ def main():
         page.goto(f"{args.base_url}/guide.html?lang=en",wait_until="networkidle")
         assert page.locator(".gallery-card").count() == image_count
         page.locator("[data-filter='ai']").click()
-        assert page.locator(".gallery-card").count() == 2
+        assert page.locator(".gallery-card").count() == 1
         page.locator("[data-filter='all']").click()
         page.locator("#gallery-search").fill("checklist")
         assert 0 < page.locator(".gallery-card").count() < image_count
