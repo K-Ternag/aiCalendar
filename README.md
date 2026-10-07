@@ -2,16 +2,16 @@
 
 Soft Minimalism 스타일의 한·영 서비스 소개 사이트입니다. GitHub Pages의 사용자 사이트와 `/저장소이름/` 프로젝트 사이트 모두 상대 경로로 동작합니다. npm 설치, API 키, 서버, 빌드 프레임워크가 필요하지 않습니다.
 
-서비스 소개는 보호자가 가정통신문·학교 알림·학부모 메시지를 아이들 일정과 준비물로 정리하는 사용 흐름을 중심으로 구성했습니다. 현장체험학습, 학부모 상담, 등교 준비물을 한·영 기능 설명과 ChatGPT 연동 예시에 사용합니다. ChatGPT로 만드는 일정 초안과 AI 없이 직접 입력하는 방식을 소개합니다.
+서비스 소개는 보호자가 가정통신문·학교 알림·학부모 메시지를 아이들 일정과 준비물로 정리하는 사용 흐름을 중심으로 구성했습니다. 현장체험학습, 학부모 상담, 등교 준비물을 한·영 기능 설명과 ChatGPT 연동 예시에 사용합니다. 문자·카톡·이미지의 공유하기에서 키즈캘린더로 바로 일정 등록을 시작하는 흐름을 첫 화면과 전용 섹션에서 소개합니다. 기본 텍스트 분석은 AI 연결·모델 다운로드 없이 사용할 수 있으며 사진 분석에는 선택적 ChatGPT 연결과 사용 권한이 필요합니다.
 
 ## 바로 보기
 
 `index.html`을 브라우저로 엽니다. 상단의 **KO / EN**으로 언어를 바꿀 수 있습니다. 선택한 언어는 브라우저에 저장되며 페이지 이동에도 유지됩니다.
 
-- `index.html`: 서비스 소개, 사용 흐름, ChatGPT 연결·직접 입력 선택, 주요 기능, FAQ.
-- `guide.html`: 현재 소개에 맞는 앱 이미지 29개. 한·영 설명, 검색, 분류, 이미지 확대.
+- `index.html`: 서비스 소개, 공유 등록 3단계, 붙여넣기·텍스트 선택·홈 화면 바로가기, 사용 흐름, 기본 텍스트 분석·ChatGPT, 주요 기능, FAQ.
+- `guide.html`: 현재 소개에 맞는 앱 이미지 35개. 한·영 설명, 검색, 분류, 이미지 확대.
 - `data.html`: 현재 구현을 기준으로 한 로컬 저장과 선택적 ChatGPT 분석의 데이터 처리 안내.
-- `assets/images/`: 현재 소개에 사용하는 PNG 이미지 29개.
+- `assets/images/`: 2026년 10월 7일 전달본의 PNG 원본 35개. 공유 목록·공유 일정 확인·문자 빠른 입력·후보 수정·최신 설정 화면을 포함합니다.
 - `assets/app-icon.png`, `assets/favicon-32.png`, `assets/favicon-48.png`, `assets/apple-touch-icon.png`: 제공한 민트색 달력 아이콘을 로고·브라우저 탭·홈 화면 아이콘에 적용했습니다.
 - `신청서_영문소개.txt`: Sign in with ChatGPT 신청서에 사용할 영문 설명.
 
@@ -43,7 +43,13 @@ powershell -ExecutionPolicy Bypass -File D:\personalAppHome\scripts\push_github.
 
 ## 문구와 스타일 수정
 
-한국어는 각 HTML 파일의 `data-i18n` 항목에서, 영어는 `app.js`의 `english` 객체에서 수정합니다. 한국어 기본 문구를 페이지에서 읽어 두므로 두 언어를 왕복 전환해도 원래 한국어 문구로 돌아옵니다. 이미지 설명의 영어 번역은 `scripts/prepare_gallery.py`에 있으며 수정 후 `python scripts\prepare_gallery.py`를 실행하면 `assets/gallery-data.js`를 갱신합니다.
+한국어는 각 HTML 파일의 `data-i18n` 항목에서, 영어는 `app.js`의 `english` 객체에서 수정합니다. 한국어 기본 문구를 페이지에서 읽어 두므로 두 언어를 왕복 전환해도 원래 한국어 문구로 돌아옵니다. 이미지의 한·영 캡션은 `scripts/prepare_gallery.py`에 있으며 수정 후 `python scripts\prepare_gallery.py`를 실행하면 `assets/gallery-data.js`를 갱신합니다.
+
+최신 이미지 전달본은 아래 명령으로 반영합니다. 매니페스트의 원본 SHA-256을 확인하고 이전 전달본에서 빠진 이미지를 정리합니다. 새 화면 ID가 추가되면 먼저 `scripts/prepare_gallery.py`의 캡션을 추가하세요. 이미지 장수·소개 문구도 전달본에 맞춰 함께 갱신합니다.
+
+```powershell
+python scripts\prepare_gallery.py --source-dir D:\personalApp\deliverables\homepage-menu-images-20261004
+```
 
 색상, 여백과 화면 크기별 배치는 `styles.css`에 있습니다. 외부 폰트·추적 스크립트·분석 API를 요청하지 않으며, 시스템에 설치된 한글 글꼴을 사용합니다.
 
@@ -62,11 +68,12 @@ python scripts\check_site.py
 node --check app.js
 node --check assets\gallery-data.js
 python scripts\package_site.py
+python scripts\create_release.py
 ```
 
-원본 29개 이미지의 SHA-256, 로컬 링크와 페이지 앵커, 영어 번역 누락 및 JavaScript 문법을 검사합니다.
+원본 35개 이미지의 SHA-256, 로컬 링크와 페이지 앵커, 영어 번역 누락 및 JavaScript 문법을 검사합니다.
 
-Chromium 브라우저 검사 스크립트는 320·390·768·1024·1440px의 한·영 홈페이지에서 이미지 비율과 가로 넘침을 확인하고, 갤러리 29개 이미지·확대 화면·검색·분류·키보드 탭 조작·언어 유지·모바일 메뉴·로컬 파일 열기를 검사합니다. 결과와 화면 캡처는 `artifacts/`에 저장되며 배포 ZIP에는 포함하지 않습니다.
+Chromium 브라우저 검사 스크립트는 320·390·768·1024·1440px의 한·영 홈페이지에서 이미지 비율과 가로 넘침을 확인하고, 공유 화면 확대·갤러리 35개 이미지·확대 화면·검색·분류·키보드 탭 조작·언어 유지·모바일 메뉴·로컬 파일 열기를 검사합니다. 결과와 화면 캡처는 `artifacts/`에 저장되며 배포 ZIP에는 포함하지 않습니다.
 
 아래 검사는 Playwright를 이미 사용할 수 있는 환경에서 선택적으로 재실행할 수 있습니다. 웹사이트 실행에는 Playwright가 필요하지 않습니다.
 

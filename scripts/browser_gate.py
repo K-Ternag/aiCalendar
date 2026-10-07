@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "artifacts"
 
 def assert_image_proportions(page, selector):
-    """Measure rendered CSS sizes, before rotation, against each decoded PNG."""
+    """Measure rendered CSS sizes, before rotation, against each decoded image."""
     for image in page.locator(selector).all():
         image.scroll_into_view_if_needed()
         image.evaluate("img => img.decode()")
@@ -40,16 +40,31 @@ def main():
                 overflow = page.evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,items:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+1||r.left < -1)}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,text:e.textContent.slice(0,45)}))})")
                 assert overflow["scroll"] <= width + 1, f"Horizontal overflow at {width}px, {language}: {overflow}"
                 assert page.locator("h1").inner_text().strip()
-                assert_image_proportions(page, ".phone-shell img, .feature-phone img")
+                assert_image_proportions(page, ".phone-shell img, .share-screen img, .feature-phone img")
                 if width in (1440,390):
                     page.evaluate("scrollTo({top:0,behavior:'instant'})")
                     page.screenshot(path=str(OUTPUT / f"homepage-{language}-{width}.png"),full_page=True)
                     page.screenshot(path=str(OUTPUT / f"hero-{language}-{width}.png"))
+                    page.locator("#share").screenshot(path=str(OUTPUT / f"sharing-{language}-{width}.png"), style=".site-header,.skip-link{visibility:hidden!important}")
                 checks.append(f"Homepage {language}, {width}px: no horizontal overflow; original image proportions")
         page.set_viewport_size({"width":1440,"height":1000})
         page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
+        page.locator(".hero-buttons a[href='#share']").click()
+        assert page.url.endswith("#share")
+        for language in ("ko", "en"):
+            page.locator(f"[data-language='{language}']").click()
+            for button in page.locator(".share-screen").all():
+                expected_title = button.locator("xpath=..").locator("h3").inner_text()
+                button.click()
+                assert page.locator("#image-dialog").evaluate("e=>e.open")
+                assert page.locator("#dialog-title").inner_text() == expected_title
+                assert_image_proportions(page, "#dialog-image")
+                page.keyboard.press("Escape")
+                page.wait_for_function("!document.body.classList.contains('modal-open')")
+        page.locator("[data-language='ko']").click()
+        checks.append("Sharing section: primary link and all three screenshots enlarge with Korean and English titles")
         page.locator("[data-feature='checklist']").click()
-        assert page.locator("#feature-image").get_attribute("src").endswith("07-checklist.png")
+        assert page.locator("#feature-image").get_attribute("src").endswith("09-checklist.png")
         assert_image_proportions(page, "#feature-image")
         page.locator(".feature-phone").click()
         assert page.locator("#image-dialog").evaluate("e=>e.open")
@@ -75,7 +90,12 @@ def main():
         page.goto(f"{args.base_url}/guide.html?lang=en",wait_until="networkidle")
         assert page.locator(".gallery-card").count() == image_count
         page.locator("[data-filter='ai']").click()
+        assert page.locator(".gallery-card").count() == 4
+        page.locator("[data-filter='share']").click()
+        assert page.locator(".gallery-card").count() == 8
+        page.locator("#gallery-search").fill("Share a photo")
         assert page.locator(".gallery-card").count() == 1
+        page.locator("#gallery-search").fill("")
         page.locator("[data-filter='all']").click()
         page.locator("#gallery-search").fill("checklist")
         assert 0 < page.locator(".gallery-card").count() < image_count
@@ -86,7 +106,7 @@ def main():
         assert page.locator(".no-results").count() == 1
         page.locator("#gallery-search").fill("")
         page.locator("[data-language='ko']").click()
-        assert page.locator(".gallery-card h2").first.inner_text() == "월간 캘린더"
+        assert page.locator(".gallery-card h2").first.inner_text() == "캘린더"
         checks.append(f"Gallery: all {image_count} current entries, filters, search, empty state, enlargement, Korean and English")
         for document in ("guide", "data"):
             for language in ("ko", "en"):
@@ -104,7 +124,7 @@ def main():
         page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
         page.locator(".menu-toggle").click()
         assert page.locator(".menu-toggle").get_attribute("aria-expanded") == "true"
-        page.locator(".main-nav a[href='#workflow']").click()
+        page.locator(".main-nav a[href='#share']").click()
         assert page.locator(".menu-toggle").get_attribute("aria-expanded") == "false"
         checks.append("Mobile navigation opens and closes after selecting a section")
         page.goto((ROOT / "guide.html").as_uri()+"?lang=en",wait_until="networkidle")

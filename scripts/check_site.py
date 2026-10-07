@@ -23,7 +23,7 @@ class Page(HTMLParser):
             if attrs["id"] in self.ids:
                 self.errors.append(f"Duplicate id: {attrs['id']}")
             self.ids.add(attrs["id"])
-        for attr in ("href", "src"):
+        for attr in ("href", "src", "data-image"):
             if attrs.get(attr):
                 self.links.append(attrs[attr])
         for attr in ("data-i18n", "data-i18n-aria", "data-i18n-alt", "data-i18n-placeholder"):
@@ -66,6 +66,17 @@ def main():
             errors.append(f"Original image missing or changed: {file.name}")
     if not manifest["images"] or len(manifest["images"]) != manifest["png_count"]:
         errors.append("Published image count must match the selected image manifest")
+    expected_images = {item["file"] for item in manifest["images"]}
+    actual_images = {path.relative_to(ROOT / "assets").as_posix() for path in (ROOT / "assets/images").glob("*.png")}
+    if actual_images != expected_images:
+        errors.append("Published images differ from manifest; check for missing or obsolete screens")
+    gallery_js = (ROOT / "assets/gallery-data.js").read_text(encoding="utf-8")
+    gallery = json.loads(gallery_js.split("window.CALENDAR_GALLERY = ", 1)[1].strip().removesuffix(";"))
+    if {"images/" + item["file"] for item in gallery} != expected_images or len(gallery) != len(expected_images):
+        errors.append("Gallery must include every current screenshot exactly once")
+    for filename in re.findall(r'file:"([^"]+)"', js):
+        if "images/" + filename not in expected_images:
+            errors.append(f"Feature tab references an obsolete screenshot: {filename}")
     if errors:
         raise SystemExit("\n".join(errors))
     print(f"PASS: {len(pages)} pages, local links and fragments, English translations, and {len(manifest['images'])} original image hashes.")
