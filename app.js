@@ -2,6 +2,7 @@
 (() => {
   "use strict";
   const english = {
+    previousImage:"Previous image",nextImage:"Next image",swipeHint:"Swipe left or right, or use the arrow keys",contactTitle:"Contact",contactBody:"For app suggestions, collaboration, or help if you have difficulty deleting your account in the app, please email us.",
     navAi:"Service AI",
     navShare:"Share to add",
     shareEyebrow:"From the screen you're already on",
@@ -123,12 +124,49 @@
   const dialogImage = document.getElementById("dialog-image");
   let activeImage = null;
   function imageTitle(item) { return item.key ? t(item.key) : item[language] || item.title || ""; }
-  function openImage(src,item) {
-    if (!dialog) return;
+  let imageSequence = [];
+  let imageIndex = 0;
+  const previousImage = dialog?.querySelector(".dialog-previous");
+  const nextImage = dialog?.querySelector(".dialog-next");
+  function showImage() {
+    const {src,item} = imageSequence[imageIndex];
     activeImage = item;
     dialogTitle.textContent = imageTitle(item); dialogImage.src = src; dialogImage.alt = imageTitle(item);
+    dialog.querySelector(".dialog-count").textContent = `${imageIndex + 1} / ${imageSequence.length}`;
+    previousImage.disabled = nextImage.disabled = imageSequence.length < 2;
+  }
+  function moveImage(direction) {
+    if (!dialog?.open || imageSequence.length < 2) return;
+    imageIndex = (imageIndex + direction + imageSequence.length) % imageSequence.length;
+    showImage();
+  }
+  function openImage(src,item,sequence) {
+    if (!dialog) return;
+    imageSequence = sequence || [...document.querySelectorAll("[data-image]")].map(button => ({src:button.dataset.image,item:button.classList.contains("feature-phone") ? features[activeFeature] : {title:button.dataset.imageTitle,key:button.dataset.imageKey}}));
+    imageIndex = imageSequence.findIndex(image => image.src === src);
+    if (imageIndex < 0) { imageSequence = [{src,item}]; imageIndex = 0; }
+    showImage();
     dialog.showModal(); document.body.classList.add("modal-open");
   }
+  previousImage?.addEventListener("click",() => moveImage(-1));
+  nextImage?.addEventListener("click",() => moveImage(1));
+  dialog?.addEventListener("keydown",event => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault(); moveImage(event.key === "ArrowLeft" ? -1 : 1);
+  });
+  let touchStart = null;
+  const imageWrap = dialog?.querySelector(".dialog-image-wrap");
+  imageWrap?.addEventListener("touchstart",event => {
+    touchStart = event.touches.length === 1 ? {x:event.touches[0].clientX,y:event.touches[0].clientY} : null;
+  },{passive:true});
+  imageWrap?.addEventListener("touchend",event => {
+    if (!touchStart || event.touches.length) { touchStart = null; return; }
+    const dx = event.changedTouches[0].clientX - touchStart.x;
+    const dy = event.changedTouches[0].clientY - touchStart.y;
+    if (Math.abs(dx) >= 50 && Math.abs(dx) > Math.abs(dy) * 1.5) moveImage(dx < 0 ? 1 : -1);
+    touchStart = null;
+  },{passive:true});
+  imageWrap?.addEventListener("touchcancel",() => { touchStart = null; },{passive:true});
   document.addEventListener("click",event => {
     const button = event.target.closest("[data-image]"); if (!button) return;
     const current = button.classList.contains("feature-phone") ? features[activeFeature] : {title:button.dataset.imageTitle,key:button.dataset.imageKey};
@@ -150,7 +188,7 @@
       const button = document.createElement("button"); button.type = "button"; button.className = "screenshot-button";
       button.setAttribute("aria-label",`${t("enlargeImage")}: ${item[language]}`);
       const img = document.createElement("img"); img.src = `assets/images/${item.file}`; img.alt = item[language]; img.width = item.width; img.height = item.height; img.loading = "lazy";
-      button.append(img); button.addEventListener("click",() => openImage(img.getAttribute("src"),item));
+      button.append(img); button.addEventListener("click",() => openImage(img.getAttribute("src"),item,results.map(result => ({src:`assets/images/${result.file}`,item:result}))));
       const group = document.createElement("span"); group.className = "gallery-group"; group.textContent = item[language === "en" ? "groupEn" : "groupKo"];
       const title = document.createElement("h2"); title.textContent = item[language];
       const caption = document.createElement("p"); caption.textContent = item[language === "en" ? "captionEn" : "captionKo"];
