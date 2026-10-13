@@ -126,19 +126,19 @@
   function imageTitle(item) { return item.key ? t(item.key) : item[language] || item.title || ""; }
   let imageSequence = [];
   let imageIndex = 0;
-  const previousImage = dialog?.querySelector(".dialog-previous");
-  const nextImage = dialog?.querySelector(".dialog-next");
   function showImage() {
     const {src,item} = imageSequence[imageIndex];
     activeImage = item;
     dialogTitle.textContent = imageTitle(item); dialogImage.src = src; dialogImage.alt = imageTitle(item);
     dialog.querySelector(".dialog-count").textContent = `${imageIndex + 1} / ${imageSequence.length}`;
-    previousImage.disabled = nextImage.disabled = imageSequence.length < 2;
   }
   function moveImage(direction) {
     if (!dialog?.open || imageSequence.length < 2) return;
     imageIndex = (imageIndex + direction + imageSequence.length) % imageSequence.length;
     showImage();
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      dialogImage.animate([{transform:`translateX(${direction * 60}px)`,opacity:.5},{transform:"translateX(0)",opacity:1}],{duration:220,easing:"ease-out"});
+    }
   }
   function openImage(src,item,sequence) {
     if (!dialog) return;
@@ -148,25 +148,42 @@
     showImage();
     dialog.showModal(); document.body.classList.add("modal-open");
   }
-  previousImage?.addEventListener("click",() => moveImage(-1));
-  nextImage?.addEventListener("click",() => moveImage(1));
   dialog?.addEventListener("keydown",event => {
     if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
     event.preventDefault(); moveImage(event.key === "ArrowLeft" ? -1 : 1);
   });
-  let touchStart = null;
+  let dragStart = null;
   const imageWrap = dialog?.querySelector(".dialog-image-wrap");
-  imageWrap?.addEventListener("touchstart",event => {
-    touchStart = event.touches.length === 1 ? {x:event.touches[0].clientX,y:event.touches[0].clientY} : null;
-  },{passive:true});
-  imageWrap?.addEventListener("touchend",event => {
-    if (!touchStart || event.touches.length) { touchStart = null; return; }
-    const dx = event.changedTouches[0].clientX - touchStart.x;
-    const dy = event.changedTouches[0].clientY - touchStart.y;
-    if (Math.abs(dx) >= 50 && Math.abs(dx) > Math.abs(dy) * 1.5) moveImage(dx < 0 ? 1 : -1);
-    touchStart = null;
-  },{passive:true});
-  imageWrap?.addEventListener("touchcancel",() => { touchStart = null; },{passive:true});
+  function resetDrag() {
+    dragStart = null;
+    if (dialogImage) dialogImage.style.transform = "";
+    imageWrap?.classList.remove("is-dragging");
+  }
+  imageWrap?.addEventListener("dragstart",event => event.preventDefault());
+  imageWrap?.addEventListener("pointerdown",event => {
+    if (!event.isPrimary) { resetDrag(); return; }
+    if (event.button !== 0 || imageSequence.length < 2) return;
+    dialogImage.getAnimations().forEach(animation => animation.cancel());
+    dragStart = {x:event.clientX,y:event.clientY,id:event.pointerId};
+    imageWrap.setPointerCapture(event.pointerId);
+  });
+  imageWrap?.addEventListener("pointermove",event => {
+    if (!dragStart || event.pointerId !== dragStart.id) return;
+    const dx = event.clientX - dragStart.x;
+    const dy = event.clientY - dragStart.y;
+    if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 10) { resetDrag(); return; }
+    imageWrap.classList.add("is-dragging");
+    dialogImage.style.transform = `translateX(${dx * .65}px)`;
+  });
+  imageWrap?.addEventListener("pointerup",event => {
+    if (!dragStart || event.pointerId !== dragStart.id) return;
+    const dx = event.clientX - dragStart.x;
+    const dy = event.clientY - dragStart.y;
+    resetDrag();
+    if (Math.abs(dx) >= 45 && Math.abs(dx) > Math.abs(dy) * 1.5) moveImage(dx < 0 ? 1 : -1);
+  });
+  imageWrap?.addEventListener("pointercancel",resetDrag);
+  imageWrap?.addEventListener("lostpointercapture",resetDrag);
   document.addEventListener("click",event => {
     const button = event.target.closest("[data-image]"); if (!button) return;
     const current = button.classList.contains("feature-phone") ? features[activeFeature] : {title:button.dataset.imageTitle,key:button.dataset.imageKey};
@@ -174,7 +191,7 @@
   });
   dialog?.querySelector(".dialog-close").addEventListener("click",() => dialog.close());
   dialog?.addEventListener("click",event => { if (event.target !== dialog) return; const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close(); });
-  dialog?.addEventListener("close",() => { document.body.classList.remove("modal-open"); activeImage = null; dialogImage.removeAttribute("src"); });
+  dialog?.addEventListener("close",() => { resetDrag(); document.body.classList.remove("modal-open"); activeImage = null; dialogImage.removeAttribute("src"); });
   const gallery = document.getElementById("gallery-grid");
   const search = document.getElementById("gallery-search");
   let filter = "all";
