@@ -1,7 +1,9 @@
 from pathlib import Path
+import json
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
+IMAGE_COUNT = len(json.loads((ROOT / 'assets/source-manifest.json').read_text(encoding='utf-8-sig'))['images'])
 
 with sync_playwright() as pw:
     browser = pw.chromium.launch()
@@ -16,21 +18,21 @@ with sync_playwright() as pw:
     for lang in ('ko', 'en'):
         page.goto((ROOT / 'guide.html').as_uri() + '?lang=' + lang)
         page.locator('.gallery-card button').first.click()
-        assert page.locator('.dialog-count').inner_text() == '1 / 44'
+        assert page.locator('.dialog-count').inner_text() == f'1 / {IMAGE_COUNT}'
         first = page.locator('#dialog-image').get_attribute('src')
         swipe()
-        assert page.locator('.dialog-count').inner_text() == '2 / 44'
+        assert page.locator('.dialog-count').inner_text() == f'2 / {IMAGE_COUNT}'
         assert page.locator('#dialog-image').get_attribute('src') != first
         page.keyboard.press('ArrowLeft')
         assert page.locator('#dialog-image').get_attribute('src') == first
         page.keyboard.press('ArrowLeft')
-        assert page.locator('.dialog-count').inner_text() == '44 / 44'
+        assert page.locator('.dialog-count').inner_text() == f'{IMAGE_COUNT} / {IMAGE_COUNT}'
         cdp = page.context.new_cdp_session(page)
         cdp.send('Input.dispatchTouchEvent', {'type':'touchStart','touchPoints':[{'x':280,'y':380}]})
         cdp.send('Input.dispatchTouchEvent', {'type':'touchMove','touchPoints':[{'x':100,'y':380}]})
         cdp.send('Input.dispatchTouchEvent', {'type':'touchEnd','touchPoints':[]})
         cdp.detach()
-        assert page.locator('.dialog-count').inner_text() == '1 / 44'
+        assert page.locator('.dialog-count').inner_text() == f'1 / {IMAGE_COUNT}'
         assert page.locator('.dialog-previous, .dialog-next, .dialog-hint').count() == 0
         bounds = page.locator('#image-dialog').bounding_box()
         assert bounds['width'] == 390 and bounds['height'] == 844

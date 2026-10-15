@@ -1,6 +1,6 @@
 {
-  "created": "2026-10-13",
-  "screenshot_count": 44,
+  "created": "2026-10-15",
+  "screenshot_count": 48,
   "ui_locale": "ko",
   "text_locales": [
     "ko",
@@ -22,14 +22,15 @@
   },
   "launcher_shortcut": {
     "shortcut_label": "문자 붙여넣기",
+    "app_label": "키즈캘린더",
     "visible": true,
     "device": "emulator-5668",
     "source": "Android 36 emulator Pixel Launcher; physical launcher unverified",
-    "sha256": "f806d929d4f63f5d96027a447ee538e42fe76ac107e80da2a0d0669d2e8cf0c5"
+    "sha256": "ed8703f1d1142374ee640381484e520777500c5f9692c22dca34f238fd9729f3"
   },
   "source_package": "homepage-menu-images-20261004",
-  "updated": "2026-10-13",
-  "png_count": 44,
+  "updated": "2026-10-15",
+  "png_count": 48,
   "images": [
     {
       "id": "01-calendar",
@@ -53,7 +54,7 @@
         "zh": "儿童日历界面：日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/01-calendar.png",
-      "sha256": "32773cf31d3ebe36d69dcfce168110cf711a1261c283e1056f5e27d3cc9183c2",
+      "sha256": "441770646d8a52fb771f1edee3a9b9470cbed25825c85c6f35e0cc411ef1c52b",
       "synthetic_data_only": true,
       "file": "images/01-calendar.png"
     },
@@ -67,19 +68,19 @@
       "png": "png/02-inbox.png",
       "webp": "webp/02-inbox.webp",
       "title": {
-        "ko": "수집함",
+        "ko": "카톡 수집",
         "en": "Inbox",
         "ja": "受信ボックス",
         "zh": "收集箱"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 수집함",
+        "ko": "키즈캘린더 앱 화면: 카톡 수집",
         "en": "Kids Calendar screen: Inbox",
         "ja": "キッズカレンダーの画面：受信ボックス",
         "zh": "儿童日历界面：收集箱"
       },
       "source": "deliverables/user-guide-images-20261004/images/12-inbox.png",
-      "sha256": "b1bbf0f50a22c9846c111422d517827359d1f8dcb8fb001cdba328a3e3fcbec7",
+      "sha256": "bdc31630951eaf55cc936d8c51d014b0ecdd9d712f72f2197cb0490f37110b64",
       "synthetic_data_only": true,
       "file": "images/02-inbox.png"
     },
@@ -105,7 +106,7 @@
         "zh": "儿童日历界面：日程简报"
       },
       "source": "deliverables/user-guide-images-20261004/images/17-today-briefing.png",
-      "sha256": "07fd454139e123feb9362c87dd6d5d51fda20f61381425a40e25f169c6f56c34",
+      "sha256": "eb343a23715a16db1ffff487e25de15e85fad62cdb60507e29fbd832c7d2e2cf",
       "synthetic_data_only": true,
       "file": "images/03-briefing.png"
     },
@@ -131,7 +132,7 @@
         "zh": "儿童日历界面：添加日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/02-add-menu.png",
-      "sha256": "e90e14036b93b211d7c4fb21196f8d89b76dacf94f3298af837b357d9169c47e",
+      "sha256": "372890388e180e5a8296e32e7225d9f998e5ea8b04f1e126f6c5b725393c5c7a",
       "synthetic_data_only": true,
       "file": "images/04-add-menu.png"
     },
@@ -157,7 +158,7 @@
         "zh": "儿童日历界面：手动输入"
       },
       "source": "deliverables/user-guide-images-20261004/images/10-manual-entry.png",
-      "sha256": "db80b2686407e036fa1310a2cce21f9eccf901ccda17d6a5070a58f588d9fd40",
+      "sha256": "932d35dc600949f6b5c79f39477ec54718a2e034fc2a2ba74bdc050fbd9a22db",
       "synthetic_data_only": true,
       "file": "images/05-manual-entry.png"
     },
@@ -183,7 +184,7 @@
         "zh": "儿童日历界面：从照片导入"
       },
       "source": "deliverables/user-guide-images-20261004/images/26-photo-candidates.png",
-      "sha256": "375ecbecd34bf21337871d479c5d3508520008bb228c4b952bc27a6c42d76b4d",
+      "sha256": "258a88cbfd2f0a63379647d7ee4e543130301bc42dc90d395b1c306fba1d5420",
       "synthetic_data_only": true,
       "file": "images/06-photo-import.png"
     },
@@ -209,7 +210,7 @@
         "zh": "儿童日历界面：确认多个日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/28-multiple-candidates.png",
-      "sha256": "2ef7a311c89c96485172c6b63d87ea2e7efd794a92f4cc9aa27e6da36b6852ca",
+      "sha256": "9fdc4a1eddccf2902fceebb057c4ebef2e22a0679dfe4e2d813075cf43220be7",
       "synthetic_data_only": true,
       "file": "images/07-candidate-review.png"
     },
@@ -235,7 +236,7 @@
         "zh": "儿童日历界面：日程详情"
       },
       "source": "deliverables/user-guide-images-20261004/images/06-event-detail.png",
-      "sha256": "8676110a2b909ca31199a0f222b7ceb27510ad948ea683e4f814068021d1bffb",
+      "sha256": "101228cb8c324356bd75eeac5621b0df68e13abdebb7897c69533b229dc70705",
       "synthetic_data_only": true,
       "file": "images/08-event-detail.png"
     },
@@ -261,7 +262,7 @@
         "zh": "儿童日历界面：准备清单"
       },
       "source": "deliverables/user-guide-images-20261004/images/07-checklist.png",
-      "sha256": "1bb72076fedce926b6eabbfc5732c7cfe1576447d955e93c98142b6ac7c5b6b2",
+      "sha256": "483a62219517d16ddda75bef684b93e297fa8e0ebad131694b245491f6347eb3",
       "synthetic_data_only": true,
       "file": "images/09-checklist.png"
     },
@@ -287,7 +288,7 @@
         "zh": "儿童日历界面：分享日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/08-share-preview.png",
-      "sha256": "08034e3a6ab33461af43908ef625984f8d446b6e6dce2bacb4fad84a049dd09c",
+      "sha256": "96f1c07ddb3b006b3aa756f51c1fe47ed28f4703df21e5eaba4fcf98dc2476eb",
       "synthetic_data_only": true,
       "file": "images/10-share.png"
     },
@@ -313,7 +314,7 @@
         "zh": "儿童日历界面：设置"
       },
       "source": "deliverables/user-guide-images-20261004/images/19-settings.png",
-      "sha256": "c42eb42f236738436555031debb099ad4718f220fd513085ee996dc2f4da344b",
+      "sha256": "110161392201dbe11cb1738c79780d4d2b0802dddddcced39669a4cd1d087c7a",
       "synthetic_data_only": true,
       "file": "images/11-settings.png"
     },
@@ -339,7 +340,7 @@
         "zh": "儿童日历界面：AI填写日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/22-ai-settings.png",
-      "sha256": "d177fa1b06f9a997717b300fa4040419f5ffad49d655bc1ee174ccfb50253967",
+      "sha256": "30e796d15d55129d9752532e0f365a0b7840b369518f9d9e5d5118f77d11cdb4",
       "synthetic_data_only": true,
       "file": "images/12-ai-settings.png"
     },
@@ -365,7 +366,7 @@
         "zh": "儿童日历界面：服务AI设置"
       },
       "source": "deliverables/user-guide-images-20261004/images/23-service-ai.png",
-      "sha256": "a5efa720d265239a0a77619a4139bab6d9b193480c8fe5f81a9c3b486070e82a",
+      "sha256": "144110c4540f2050ece21e6322cf8b08e18a3e9045151110321102a013e7f9bc",
       "synthetic_data_only": true,
       "file": "images/13-service-ai.png"
     },
@@ -391,7 +392,7 @@
         "zh": "儿童日历界面：AI隐私同意"
       },
       "source": "deliverables/user-guide-images-20261004/images/24-service-ai-consent.png",
-      "sha256": "a7d98d3a4b3ef4e53cf448bdb895db8464cf42ad3552946e25960ce6b59bc659",
+      "sha256": "77419bc0b8756d78d35990840a9f5593f9acb7dbaf18d98fa52a170781b3488c",
       "synthetic_data_only": true,
       "file": "images/14-service-ai-consent.png"
     },
@@ -417,7 +418,7 @@
         "zh": "儿童日历界面：基本文本分析"
       },
       "source": "deliverables/user-guide-images-20261004/images/25-basic-text-analysis.png",
-      "sha256": "c3b08f9c64f37edf755cecabe92da1871bd6952df20dc8af53e87a364caa46b3",
+      "sha256": "2cc5407f472661cfa0c21d5fbdc014a168577d9919ba1eff157ddf4926c31f6e",
       "synthetic_data_only": true,
       "file": "images/15-basic-text-analysis.png"
     },
@@ -443,7 +444,7 @@
         "zh": "儿童日历界面：KakaoTalk消息收集"
       },
       "source": "deliverables/user-guide-images-20261004/images/15-kakao-settings.png",
-      "sha256": "06b978cb268f7844b0ca54b849da66e64e31a2ea693e4d24aaad2f4e0f2f3c33",
+      "sha256": "960f64bb566dd81df43c2044411e57f4a6d60f350e379d84b9bacb462826c2ce",
       "synthetic_data_only": true,
       "file": "images/16-kakao-settings.png"
     },
@@ -469,7 +470,7 @@
         "zh": "儿童日历界面：聊天室和发送者筛选"
       },
       "source": "deliverables/user-guide-images-20261004/images/16-kakao-filter.png",
-      "sha256": "84743a29c676e3f706eeb3634bd7283081e1565845f6baa1773a2d0f2dd309b4",
+      "sha256": "46064535aec3a8b9ef7f644d01a987f43d871d80f1585adff8c871551fabacd9",
       "synthetic_data_only": true,
       "file": "images/17-kakao-filter.png"
     },
@@ -495,7 +496,7 @@
         "zh": "儿童日历界面：日程提醒"
       },
       "source": "deliverables/user-guide-images-20261004/images/20-reminder-settings.png",
-      "sha256": "67a685f07064b27021bb1c84113c9a7cfd18e712ae68ebeebc678bba670e24b6",
+      "sha256": "7c07e339f0dcc2c27e0f55dbd76dbb045f5473a71f993c873d12ce0d93ee4aa0",
       "synthetic_data_only": true,
       "file": "images/18-reminders.png"
     },
@@ -521,7 +522,7 @@
         "zh": "儿童日历界面：界面设计"
       },
       "source": "deliverables/user-guide-images-20261004/images/21-design-picker.png",
-      "sha256": "d062f37ac0744ca7ba3387f1c3afe05ff9e6cb17de07e7780a74792ad4cf853a",
+      "sha256": "1fb14b6710c545472ed97e9c20e6af9714953c27332de5bf1111f77e4a926025",
       "synthetic_data_only": true,
       "file": "images/19-design-picker.png"
     },
@@ -547,7 +548,7 @@
         "zh": "儿童日历界面：公共假日"
       },
       "source": "deliverables/user-guide-images-20261004/images/34-holidays.png",
-      "sha256": "f34e1d06a36f051bcd35a415beeef6d26a5cf9beb3d3cde3c9e64dfb299b3466",
+      "sha256": "bf4ef80fc40a4ea37f4134627bfb7596009eea5fe5a85fe232b58d5ea044990a",
       "synthetic_data_only": true,
       "file": "images/20-holidays.png"
     },
@@ -573,7 +574,7 @@
         "zh": "儿童日历界面：已保存的消息"
       },
       "source": "deliverables/user-guide-images-20261004/images/35-message-storage.png",
-      "sha256": "3bdcd1b34ae36694de7cb483d6875215fd4270b945ee94933f7ca47b020bc335",
+      "sha256": "380058f55424c1d35c32adfacd2f23cdb45ea106c5225508df7ecd1d0356196f",
       "synthetic_data_only": true,
       "file": "images/21-message-storage.png"
     },
@@ -599,7 +600,7 @@
         "zh": "儿童日历界面：快速文本录入"
       },
       "source": "deliverables/user-guide-images-20261004/images/29-text-entry.png",
-      "sha256": "905baf4445cc31b2f63b968c38addabd1593141c63d87972213740bf40550d08",
+      "sha256": "ad3bba3ea77bb0cdcf75c94ffd75f6c822622f29678f7758644ce3172554591f",
       "synthetic_data_only": true,
       "file": "images/22-text-entry.png"
     },
@@ -625,7 +626,7 @@
         "zh": "儿童日历界面：确认粘贴的日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/30-text-review.png",
-      "sha256": "251aa30e157b8a25b82cc735e02c161f213d369a91c3546b9f139b6d2b9cda43",
+      "sha256": "96b4ba7d3a9641d98d5a26050127f92aabfdf57560f230d40dde1afeac593191",
       "synthetic_data_only": true,
       "file": "images/23-text-review.png"
     },
@@ -651,7 +652,7 @@
         "zh": "儿童日历界面：编辑原文"
       },
       "source": "deliverables/user-guide-images-20261004/images/31-source-edit.png",
-      "sha256": "eb92e8e4499f3f578e277d76142db544281c470c540816e56f4e5c45689e7e5b",
+      "sha256": "9df9e23eea241d5535b9378c7c9787a9bd9a2d28a2b056888cf05fec2c01183e",
       "synthetic_data_only": true,
       "file": "images/24-source-edit.png"
     },
@@ -677,7 +678,7 @@
         "zh": "儿童日历界面：提醒权限"
       },
       "source": "deliverables/user-guide-images-20261004/images/32-reminder-permissions.png",
-      "sha256": "6b3fac130da680e369b6f7a553e04a4480b3c2fed7116fe579fc47248413b091",
+      "sha256": "a4bbca5564aac06c53faca2da728581ab02229187386156f77eb032e274f6834",
       "synthetic_data_only": true,
       "file": "images/25-reminder-permissions.png"
     },
@@ -703,7 +704,7 @@
         "zh": "儿童日历界面：保留当前草稿"
       },
       "source": "deliverables/user-guide-images-20261004/images/33-text-replace-confirmation.png",
-      "sha256": "9c8ab1c6a09bf8f0b437aeddb186cdc4876dbb4f1f74a4aeaab849008f435ebf",
+      "sha256": "3decb48b817b7b21f4640f223309ce5e153cc1f123d6ecb3e688324750e99014",
       "synthetic_data_only": true,
       "file": "images/26-text-replace-confirmation.png"
     },
@@ -729,7 +730,7 @@
         "zh": "儿童日历界面：照片录入说明"
       },
       "source": "deliverables/user-guide-images-20261004/images/03-photo-ai-charge.png",
-      "sha256": "265bc69aa756d876f0e195e2fe9f8be71c0efe0a5a8030a34426e26220cbddc8",
+      "sha256": "9a06826dd3d8246992d06ce576284d43c8819921699d371ed406cbf40a48d0ed",
       "synthetic_data_only": true,
       "file": "images/27-photo-ai-charge.png"
     },
@@ -755,7 +756,7 @@
         "zh": "儿童日历界面：放弃草稿前确认"
       },
       "source": "deliverables/user-guide-images-20261004/images/36-discard-confirmation.png",
-      "sha256": "c1f143eb16088894d73055ef4807010451b515ab8e342b57abaecee6c988131c",
+      "sha256": "a3ed8772b49b2b89a649043563f5dda73dbec5f823fda64f37d72aad2e597b2f",
       "synthetic_data_only": true,
       "file": "images/28-discard-confirmation.png"
     },
@@ -781,7 +782,7 @@
         "zh": "儿童日历界面：查看原文"
       },
       "source": "deliverables/user-guide-images-20261004/images/37-text-original.png",
-      "sha256": "1ccdd5dec6f31ba7e2c379a4f207c491d263cda8e4ec08d413b577f1f5d83a57",
+      "sha256": "1fc81427618bb4ada710ae1def175e81be18b838f7be3e312d571780647d7a8b",
       "synthetic_data_only": true,
       "file": "images/29-text-original.png"
     },
@@ -807,7 +808,7 @@
         "zh": "儿童日历界面：粘贴文本快捷方式"
       },
       "source": "deliverables/user-guide-images-20261004/images/38-launcher-shortcut.png",
-      "sha256": "f806d929d4f63f5d96027a447ee538e42fe76ac107e80da2a0d0669d2e8cf0c5",
+      "sha256": "ed8703f1d1142374ee640381484e520777500c5f9692c22dca34f238fd9729f3",
       "synthetic_data_only": true,
       "file": "images/30-launcher-shortcut.png"
     },
@@ -821,19 +822,19 @@
       "png": "png/31-candidate-details.png",
       "webp": "webp/31-candidate-details.webp",
       "title": {
-        "ko": "일정 후보 상세 보기",
+        "ko": "후보 확인·수정 · 추가 항목",
         "en": "Candidate details",
         "ja": "予定候補の詳細",
         "zh": "日程候选详情"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 후보 상세 보기",
+        "ko": "키즈캘린더 앱 화면: 후보 확인·수정 · 추가 항목",
         "en": "Kids Calendar screen: Candidate details",
         "ja": "キッズカレンダーの画面：予定候補の詳細",
         "zh": "儿童日历界面：日程候选详情"
       },
       "source": "deliverables/user-guide-images-20261004/images/39-candidate-details.png",
-      "sha256": "011a7e9d01e63293b9e7e864a6ce2680cbcbdfb5a16c694957530fcc5dc712e7",
+      "sha256": "b612fda9af54f6a54c66c8219bf11a8bc326f9c3b1e69f64864643742fbba0d0",
       "synthetic_data_only": true,
       "file": "images/31-candidate-details.png"
     },
@@ -847,19 +848,19 @@
       "png": "png/32-candidate-edit.png",
       "webp": "webp/32-candidate-edit.webp",
       "title": {
-        "ko": "일정 후보 수정",
+        "ko": "후보 확인·수정 · 기본 항목",
         "en": "Edit a candidate",
         "ja": "予定候補を編集",
         "zh": "编辑日程候选"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 후보 수정",
+        "ko": "키즈캘린더 앱 화면: 후보 확인·수정 · 기본 항목",
         "en": "Kids Calendar screen: Edit a candidate",
         "ja": "キッズカレンダーの画面：予定候補を編集",
         "zh": "儿童日历界面：编辑日程候选"
       },
       "source": "deliverables/user-guide-images-20261004/images/40-candidate-edit.png",
-      "sha256": "3415724f24d2218145823ca7a4c80f8e8fc06676ed03a237779bbd6db190c388",
+      "sha256": "bc5fe0b9c893b388ab8ecf14271022c925bbc26fe9162ef70ed918be7c91a520",
       "synthetic_data_only": true,
       "file": "images/32-candidate-edit.png"
     },
@@ -885,7 +886,7 @@
         "zh": "儿童日历界面：从消息分享至应用"
       },
       "source": "deliverables/user-guide-images-20261004/images/41-share-text.png",
-      "sha256": "abd22e6276424369e4c35852806a8564ae55bcc854832f7cf23f3b1e71770150",
+      "sha256": "88f613deba2ff36de5b567987902a65d4184306cc402c87af7800e8bb8624fd6",
       "synthetic_data_only": true,
       "file": "images/33-share-text.png"
     },
@@ -911,7 +912,7 @@
         "zh": "儿童日历界面：从照片分享至应用"
       },
       "source": "deliverables/user-guide-images-20261004/images/42-share-image.png",
-      "sha256": "04a93335abf6371d582b07a4d16baeba370672804c3e5df0d01a5721f4b77e85",
+      "sha256": "ab7a1f5e90135c9f73b250a01b06ade287bca2caafe2381219209c60855d867a",
       "synthetic_data_only": true,
       "file": "images/34-share-image.png"
     },
@@ -937,7 +938,7 @@
         "zh": "儿童日历界面：确认分享的日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/43-shared-text-review.png",
-      "sha256": "1e927b96e41bf8656a015c73707daaaca6302db79dc4e7f45057753efe256dcb",
+      "sha256": "ea1f97d4a28f28ac9548fbe30ce54f046624751e5dad3084b4270430445764ca",
       "synthetic_data_only": true,
       "file": "images/35-shared-text-review.png"
     },
@@ -963,7 +964,7 @@
         "zh": "儿童日历界面：会员昵称"
       },
       "source": "deliverables/user-guide-images-20261004/images/44-nickname.png",
-      "sha256": "9347894c62fdc1ba59cd234dcc2a541a0ee65b4bc755c084020601df0f92a491",
+      "sha256": "09b71286ff68f058a74d09b1ebb893c8dd6ed0ba82f6f23ce1834bd2597dc7b0",
       "synthetic_data_only": true,
       "file": "images/36-nickname.png"
     },
@@ -989,7 +990,7 @@
         "zh": "儿童日历界面：会员与订阅"
       },
       "source": "deliverables/user-guide-images-20261004/images/45-membership.png",
-      "sha256": "c0b46e0dad2ad231fc57b27a4730afa67b2129f2f701c30976674f1c125a1f33",
+      "sha256": "9ac4c890fb883f0df2bdf69e3e06b44d6773554d34b9a707dde466e0ceba00fc",
       "synthetic_data_only": true,
       "file": "images/37-membership.png"
     },
@@ -1015,7 +1016,7 @@
         "zh": "儿童日历界面：选择日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/46-calendar-selector.png",
-      "sha256": "4e1e36594264db373a298e65af645dde759ee76ecdb8d0807b11e86998f6e961",
+      "sha256": "9f42501a78141a9f4ae285d0dc5128386030ead8281ab2d427a95aa93eb9dfba",
       "synthetic_data_only": true,
       "file": "images/38-calendar-selector.png"
     },
@@ -1041,7 +1042,7 @@
         "zh": "儿童日历界面：我的日历与共享"
       },
       "source": "deliverables/user-guide-images-20261004/images/47-calendar-management.png",
-      "sha256": "b8d7461fa01a8645050cfee7d956501013830b87f5a63c0dc9b031f565433463",
+      "sha256": "800db748bb4211b99eea1cfbdf9ebd919de1258a53a1222295b082587098e3d2",
       "synthetic_data_only": true,
       "file": "images/39-calendar-management.png"
     },
@@ -1067,7 +1068,7 @@
         "zh": "儿童日历界面：创建共享日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/48-shared-calendar-create.png",
-      "sha256": "3ea7ab5847a34fdf775da4cbe49bb97d112d7a34ecbf8b9f7e2ddfd28da6e0f3",
+      "sha256": "4c819dac81e3b8dd2b261cfa91bc6fa9523d6478bbd87301b1f22b34e3ea4361",
       "synthetic_data_only": true,
       "file": "images/40-shared-calendar-create.png"
     },
@@ -1093,7 +1094,7 @@
         "zh": "儿童日历界面：家庭共享日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/49-family-calendar.png",
-      "sha256": "76bdec3003a28e86bdb0eaf5143f13a7d4015c566a4cae215e3b992157028b0e",
+      "sha256": "2b85f8658563d65e5c68ef51864d8e14e86f96e0e024425b304adbe4813d53f6",
       "synthetic_data_only": true,
       "file": "images/41-family-calendar.png"
     },
@@ -1119,7 +1120,7 @@
         "zh": "儿童日历界面：共享成员"
       },
       "source": "deliverables/user-guide-images-20261004/images/50-family-members.png",
-      "sha256": "fb0005b80aa57151071363df972516ad789483990adb959112b017b72a725c34",
+      "sha256": "99452fc41dfff3a1d8c48a7b3cd1a31d8d03b4293ea35cbb2f0da04c5ad81a05",
       "synthetic_data_only": true,
       "file": "images/42-family-members.png"
     },
@@ -1145,7 +1146,7 @@
         "zh": "儿童日历界面：邀请家人"
       },
       "source": "deliverables/user-guide-images-20261004/images/51-family-invite.png",
-      "sha256": "fb0005b80aa57151071363df972516ad789483990adb959112b017b72a725c34",
+      "sha256": "99452fc41dfff3a1d8c48a7b3cd1a31d8d03b4293ea35cbb2f0da04c5ad81a05",
       "synthetic_data_only": true,
       "file": "images/43-family-invite.png"
     },
@@ -1171,9 +1172,113 @@
         "zh": "儿童日历界面：确认AI日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/52-ai-text-review.png",
-      "sha256": "4745d11737e203e660de778dc69199d67fe264568fbd1936dd1ef93a043a3e9b",
+      "sha256": "338ee6ea4d71c7e3acdb1239b91f9f8f2561f55a31d491af81df4b01a8c68ba4",
       "synthetic_data_only": true,
       "file": "images/44-ai-text-review.png"
+    },
+    {
+      "id": "45-candidate-repeat",
+      "group": "registration",
+      "type": "native-app-screenshot",
+      "ui_locale": "ko",
+      "width": 1170,
+      "height": 2532,
+      "png": "png/45-candidate-repeat.png",
+      "webp": "webp/45-candidate-repeat.webp",
+      "title": {
+        "ko": "반복 선택",
+        "en": "Repeat settings",
+        "ja": "繰り返し設定",
+        "zh": "重复设置"
+      },
+      "alt": {
+        "ko": "키즈캘린더 앱 화면: 반복 선택",
+        "en": "Kids Calendar screen: Repeat settings",
+        "ja": "キッズカレンダーの画面：繰り返し設定",
+        "zh": "儿童日历界面：重复设置"
+      },
+      "source": "deliverables/user-guide-images-20261004/images/53-candidate-repeat.png",
+      "sha256": "e93d245aa35e68571cb495b86745e6d78b7704ce40e497a0c2f8edac75016150",
+      "synthetic_data_only": true,
+      "file": "images/45-candidate-repeat.png"
+    },
+    {
+      "id": "46-candidate-reminder",
+      "group": "registration",
+      "type": "native-app-screenshot",
+      "ui_locale": "ko",
+      "width": 1170,
+      "height": 2532,
+      "png": "png/46-candidate-reminder.png",
+      "webp": "webp/46-candidate-reminder.webp",
+      "title": {
+        "ko": "알림 선택",
+        "en": "Reminder settings",
+        "ja": "通知設定",
+        "zh": "提醒设置"
+      },
+      "alt": {
+        "ko": "키즈캘린더 앱 화면: 알림 선택",
+        "en": "Kids Calendar screen: Reminder settings",
+        "ja": "キッズカレンダーの画面：通知設定",
+        "zh": "儿童日历界面：提醒设置"
+      },
+      "source": "deliverables/user-guide-images-20261004/images/54-candidate-reminder.png",
+      "sha256": "c3ddd586ccbf60614639eb2d42a23a44983f889c17ef0b50a042ef40e31ef0c1",
+      "synthetic_data_only": true,
+      "file": "images/46-candidate-reminder.png"
+    },
+    {
+      "id": "47-candidate-category",
+      "group": "registration",
+      "type": "native-app-screenshot",
+      "ui_locale": "ko",
+      "width": 1170,
+      "height": 2532,
+      "png": "png/47-candidate-category.png",
+      "webp": "webp/47-candidate-category.webp",
+      "title": {
+        "ko": "분류 선택",
+        "en": "Event category",
+        "ja": "予定の分類",
+        "zh": "日程分类"
+      },
+      "alt": {
+        "ko": "키즈캘린더 앱 화면: 분류 선택",
+        "en": "Kids Calendar screen: Event category",
+        "ja": "キッズカレンダーの画面：予定の分類",
+        "zh": "儿童日历界面：日程分类"
+      },
+      "source": "deliverables/user-guide-images-20261004/images/55-candidate-category.png",
+      "sha256": "b8fa7f7b87bc666aa1111db0d9bf80d015f6c7dffea96b3f823fa64878097012",
+      "synthetic_data_only": true,
+      "file": "images/47-candidate-category.png"
+    },
+    {
+      "id": "48-color-picker",
+      "group": "settings",
+      "type": "native-app-screenshot",
+      "ui_locale": "ko",
+      "width": 1170,
+      "height": 2532,
+      "png": "png/48-color-picker.png",
+      "webp": "webp/48-color-picker.webp",
+      "title": {
+        "ko": "화면 색상",
+        "en": "App colors",
+        "ja": "画面のカラー",
+        "zh": "界面颜色"
+      },
+      "alt": {
+        "ko": "키즈캘린더 앱 화면: 화면 색상",
+        "en": "Kids Calendar screen: App colors",
+        "ja": "キッズカレンダーの画面：画面のカラー",
+        "zh": "儿童日历界面：界面颜色"
+      },
+      "source": "deliverables/user-guide-images-20261004/images/56-color-picker.png",
+      "sha256": "1fb14b6710c545472ed97e9c20e6af9714953c27332de5bf1111f77e4a926025",
+      "synthetic_data_only": true,
+      "file": "images/48-color-picker.png"
     }
   ]
 }

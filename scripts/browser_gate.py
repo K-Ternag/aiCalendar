@@ -2,20 +2,22 @@
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "artifacts"
 
 def assert_image_proportions(page, selector):
-    """Measure rendered CSS sizes, before rotation, against each decoded image."""
+    """Check decoded images preserve their proportions, including contained images."""
     for image in page.locator(selector).all():
         image.scroll_into_view_if_needed()
         image.evaluate("img => img.decode()")
-        sizes = image.evaluate("img => { const css = getComputedStyle(img); return { src:img.getAttribute('src'),width:parseFloat(css.width),height:parseFloat(css.height),naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight }; }")
+        sizes = image.evaluate("img => { const css = getComputedStyle(img); return { src:img.getAttribute('src'),width:parseFloat(css.width),height:parseFloat(css.height),naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,objectFit:css.objectFit }; }")
+        assert all(sizes[key] > 0 for key in ("width", "height", "naturalWidth", "naturalHeight")), f"Empty image: {sizes}"
         expected = sizes["naturalWidth"] / sizes["naturalHeight"]
         actual = sizes["width"] / sizes["height"]
-        assert abs(actual / expected - 1) < 0.01, f"Stretched image: {sizes}"
+        assert sizes["objectFit"] in ("contain", "scale-down") or abs(actual / expected - 1) < 0.01, f"Stretched image: {sizes}"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -64,7 +66,7 @@ def main():
         page.locator("[data-language='ko']").click()
         checks.append("Sharing section: primary link and all three screenshots enlarge with Korean and English titles")
         page.locator("[data-feature='checklist']").click()
-        assert page.locator("#feature-image").get_attribute("src").endswith("09-checklist.png")
+        assert urlsplit(page.locator("#feature-image").get_attribute("src")).path.endswith("09-checklist.png")
         assert_image_proportions(page, "#feature-image")
         page.locator(".feature-phone").click()
         assert page.locator("#image-dialog").evaluate("e=>e.open")

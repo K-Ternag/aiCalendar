@@ -14,7 +14,7 @@ window.CALENDAR_GALLERY = [
   },
   {
     "file": "02-inbox.png",
-    "ko": "수집함",
+    "ko": "카톡 수집",
     "en": "Inbox",
     "captionKo": "조건에 맞춰 모은 카카오톡 원문에서 등록할 일정을 골라요.",
     "captionEn": "Choose a collected KakaoTalk message to start reviewing an event.",
@@ -362,7 +362,7 @@ window.CALENDAR_GALLERY = [
   },
   {
     "file": "31-candidate-details.png",
-    "ko": "일정 후보 상세 보기",
+    "ko": "후보 확인·수정 · 추가 항목",
     "en": "Candidate details",
     "captionKo": "후보의 상세 보기를 펼쳐 장소, 메모와 준비물을 확인해요.",
     "captionEn": "Expand a draft to review its place, notes and supplies.",
@@ -374,7 +374,7 @@ window.CALENDAR_GALLERY = [
   },
   {
     "file": "32-candidate-edit.png",
-    "ko": "일정 후보 수정",
+    "ko": "후보 확인·수정 · 기본 항목",
     "en": "Edit a candidate",
     "captionKo": "후보의 수정 버튼으로 날짜와 세부 항목을 고쳐요.",
     "captionEn": "Use Edit to change a draft's date and other details.",
@@ -525,6 +525,54 @@ window.CALENDAR_GALLERY = [
     "groupKo": "일정 등록",
     "groupEn": "Event entry",
     "category": "entry",
+    "width": 1170,
+    "height": 2532
+  },
+  {
+    "file": "45-candidate-repeat.png",
+    "ko": "반복 선택",
+    "en": "Repeat settings",
+    "captionKo": "일정 후보에 적용할 반복 설정을 선택해요.",
+    "captionEn": "Choose repeat settings for an event draft.",
+    "groupKo": "일정 등록",
+    "groupEn": "Event entry",
+    "category": "entry",
+    "width": 1170,
+    "height": 2532
+  },
+  {
+    "file": "46-candidate-reminder.png",
+    "ko": "알림 선택",
+    "en": "Reminder settings",
+    "captionKo": "일정 후보의 알림 시간을 선택해요.",
+    "captionEn": "Choose when to receive a reminder for an event draft.",
+    "groupKo": "일정 등록",
+    "groupEn": "Event entry",
+    "category": "entry",
+    "width": 1170,
+    "height": 2532
+  },
+  {
+    "file": "47-candidate-category.png",
+    "ko": "분류 선택",
+    "en": "Event category",
+    "captionKo": "일정 후보에 맞는 분류를 선택해요.",
+    "captionEn": "Choose a category for an event draft.",
+    "groupKo": "일정 등록",
+    "groupEn": "Event entry",
+    "category": "entry",
+    "width": 1170,
+    "height": 2532
+  },
+  {
+    "file": "48-color-picker.png",
+    "ko": "화면 색상",
+    "en": "App colors",
+    "captionKo": "앱 화면에 사용할 색상을 선택해요.",
+    "captionEn": "Choose colors for the app's appearance.",
+    "groupKo": "설정",
+    "groupEn": "Settings",
+    "category": "daily",
     "width": 1170,
     "height": 2532
   }

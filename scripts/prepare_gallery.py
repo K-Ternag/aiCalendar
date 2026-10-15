@@ -51,6 +51,10 @@ CAPTIONS = {
     "42-family-members": ("공유 멤버의 소유자·편집 가능·읽기 전용 권한을 확인해요.", "Review owner, editing and read-only access for shared-calendar members."),
     "43-family-invite": ("편집 가능·읽기 전용 초대 메뉴를 확인해요. 실제 초대 발송은 미검증입니다.", "Explore editing and read-only invitation options. Live invitation delivery remains unverified."),
     "44-ai-text-review": ("서비스 AI로 채운 문자 일정 후보를 확인하고 저장해요. AI 결과는 설명용 예시입니다.", "Review and save text event drafts filled by service AI. AI results are illustrative."),
+    "45-candidate-repeat": ("일정 후보에 적용할 반복 설정을 선택해요.", "Choose repeat settings for an event draft."),
+    "46-candidate-reminder": ("일정 후보의 알림 시간을 선택해요.", "Choose when to receive a reminder for an event draft."),
+    "47-candidate-category": ("일정 후보에 맞는 분류를 선택해요.", "Choose a category for an event draft."),
+    "48-color-picker": ("앱 화면에 사용할 색상을 선택해요.", "Choose colors for the app's appearance."),
 }
 GROUPS = {
     "main": ("캘린더·모아보기", "Calendar & overviews", "calendar"),
