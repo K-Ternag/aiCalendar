@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CAPTIONS = {
     "01-calendar": ("아이들 일정과 가족 약속을 날짜별로 확인해요.", "See school events and family plans by date."),
-    "02-inbox": ("조건에 맞춰 모은 카카오톡 원문에서 등록할 일정을 골라요.", "Choose a collected KakaoTalk message to start reviewing an event."),
+    "02-inbox": ("확인 필요·일정 등록·건너뜀으로 원문을 관리하고, 한 번에 최대 5개를 일정 확인해요.", "Manage originals in Needs review, Registered and Skipped tabs. Review up to five messages at a time."),
     "03-briefing": ("오늘과 이번 주 일정을 살펴보고 선택한 기간을 공유해요.", "Review daily and weekly plans and share the selected period."),
     "04-add-menu": ("문자 붙여넣기, 직접 입력, 사진 등록 중 편한 방법을 골라요.", "Choose pasted text, manual entry or photo entry."),
     "05-manual-entry": ("제목과 날짜를 직접 입력하고 필요한 세부 항목을 더해요.", "Enter a title and date, then add the details you need."),
@@ -34,13 +34,13 @@ CAPTIONS = {
     "25-reminder-permissions": ("일정 알림에 필요한 기기 권한을 확인해요.", "Check the device permissions needed for event reminders."),
     "26-text-replace-confirmation": ("새 문자가 들어와도 계속 작성할지 직접 선택해요.", "Choose whether to keep your current draft when new text arrives."),
     "27-photo-ai-charge": ("분석 1건에 AI 1회가 차감돼요. 여러 일정도 한 번의 분석이면 1회이며 확인·저장은 추가 차감이 없어요.", "Each analysis uses one AI credit, even for multiple events. Reviewing and saving use no additional credits."),
-    "28-discard-confirmation": ("저장하지 않고 닫기 전에 작성 중인 내용을 확인해요.", "Confirm before closing without saving your draft."),
+    "28-discard-confirmation": ("작성 중인 내용과 저장하지 않은 사진 분석 결과를 닫기 전에 확인해요.", "Confirm before leaving an edited draft or unsaved photo analysis results."),
     "29-text-original": ("일정 확인 중 가져온 원문을 열어 내용을 비교해요.", "Open the original text to compare it with the draft."),
     "30-launcher-shortcut": ("홈 화면에서 앱 아이콘을 길게 눌러 문자 붙여넣기를 바로 열어요.", "Long-press the app icon to open the Paste text shortcut."),
-    "31-candidate-details": ("후보의 상세 보기를 펼쳐 장소, 메모와 준비물을 확인해요.", "Expand a draft to review its place, notes and supplies."),
-    "32-candidate-edit": ("후보의 수정 버튼으로 날짜와 세부 항목을 고쳐요.", "Use Edit to change a draft's date and other details."),
-    "33-share-text": ("문자·카톡의 공유에서 키즈캘린더를 선택해요. Android 공유 목록 예시입니다.", "Choose Kids Calendar when sharing a message. Shown in the Android share sheet."),
-    "34-share-image": ("사진의 공유에서도 키즈캘린더를 선택해요. 분석에는 회원·동의·유효한 AI 이용권이 필요해요.", "Choose Kids Calendar when sharing a photo. Analysis requires membership, consent and a valid AI entitlement."),
+    "31-candidate-details": ("확인·수정의 추가 항목에서 장소·메모를 살펴보고 준비물을 추가하거나 고쳐요.", "Review place and notes, then add or edit supplies in the draft's additional fields."),
+    "32-candidate-edit": ("후보의 확인·수정에서 제목·날짜·시간 등 기본 항목을 고쳐요.", "Use Review and edit to change a draft's title, date and time."),
+    "33-share-text": ("문자·카톡의 공유에서 키즈캘를 선택해요. Android 공유 목록 예시입니다.", "Choose Kids Calendar when sharing a message. Shown in the Android share sheet."),
+    "34-share-image": ("사진의 공유에서도 키즈캘를 선택해요. 분석에는 회원·동의·유효한 AI 이용권이 필요해요.", "Choose Kids Calendar when sharing a photo. Analysis requires membership, consent and a valid AI entitlement."),
     "35-shared-text-review": ("공유한 문자에서 채운 일정을 확인하고 원하는 후보만 저장해요.", "Review events filled from shared text and save only the drafts you choose."),
     "36-nickname": ("공유 캘린더에서 사용할 회원 별명을 설정해요. 회원 상태는 예시입니다.", "Set a member nickname for shared calendars. Membership state is illustrative."),
     "37-membership": ("체험·구독 이용권과 남은 AI 횟수를 확인해요. 실제 Google Play 결제는 미검증입니다.", "Check trial or subscription entitlements and remaining AI uses. Live Google Play billing remains unverified."),
@@ -55,6 +55,7 @@ CAPTIONS = {
     "46-candidate-reminder": ("일정 후보의 알림 시간을 선택해요.", "Choose when to receive a reminder for an event draft."),
     "47-candidate-category": ("일정 후보에 맞는 분류를 선택해요.", "Choose a category for an event draft."),
     "48-color-picker": ("앱 화면에 사용할 색상을 선택해요.", "Choose colors for the app's appearance."),
+    "49-google-calendar-import": ("기기에 동기화된 구글 일정을 골라 개인·공유 캘린더로 복사해요. 원본은 유지되며 이후 변경은 자동 반영되지 않아요.", "Copy selected Google events synced to this device into a personal or shared calendar. Originals stay unchanged; later changes are not synced."),
 }
 GROUPS = {
     "main": ("캘린더·모아보기", "Calendar & overviews", "calendar"),
@@ -108,6 +109,8 @@ def main():
     for source in manifest["images"]:
         caption_ko, caption_en = CAPTIONS[source["id"]]
         group_ko, group_en, category = GROUPS[source["group"]]
+        if source["id"] == "49-google-calendar-import":
+            category = "calendar"
         if source["id"] in ("22-text-entry", "23-text-review", "24-source-edit", "29-text-original", "30-launcher-shortcut", "33-share-text", "34-share-image", "35-shared-text-review"):
             category = "share"
         gallery.append({"file": Path(source["file"]).name, "ko": source["title"]["ko"], "en": source["title"]["en"], "captionKo": caption_ko, "captionEn": caption_en, "groupKo": group_ko, "groupEn": group_en, "category": category, "width": source["width"], "height": source["height"]})

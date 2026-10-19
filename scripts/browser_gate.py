@@ -42,14 +42,31 @@ def main():
                 overflow = page.evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,items:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+1||r.left < -1)}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,text:e.textContent.slice(0,45)}))})")
                 assert overflow["scroll"] <= width + 1, f"Horizontal overflow at {width}px, {language}: {overflow}"
                 assert page.locator("h1").inner_text().strip()
-                assert_image_proportions(page, ".phone-shell img, .share-screen img, .feature-phone img")
+                assert_image_proportions(page, ".phone-shell img, .share-screen img, .feature-phone img, .google-screen img")
                 if width in (1440,390):
                     page.evaluate("scrollTo({top:0,behavior:'instant'})")
                     page.screenshot(path=str(OUTPUT / f"homepage-{language}-{width}.png"),full_page=True)
                     page.screenshot(path=str(OUTPUT / f"hero-{language}-{width}.png"))
                     page.locator("#share").screenshot(path=str(OUTPUT / f"sharing-{language}-{width}.png"), style=".site-header,.skip-link{visibility:hidden!important}")
+                    page.locator("#google-calendar").screenshot(path=str(OUTPUT / f"google-import-{language}-{width}.png"), style=".site-header,.skip-link{visibility:hidden!important}")
                 checks.append(f"Homepage {language}, {width}px: no horizontal overflow; original image proportions")
         page.set_viewport_size({"width":1440,"height":1000})
+        page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
+        page.locator(".hero-update").click()
+        assert page.url.endswith("#google-calendar")
+        for language in ("ko", "en"):
+            page.locator(f"[data-language='{language}']").click()
+            page.locator(".google-screen").click()
+            assert page.locator("#image-dialog").evaluate("e=>e.open")
+            assert urlsplit(page.locator("#dialog-image").get_attribute("src")).path.endswith("49-google-calendar-import.png")
+            assert page.locator("#dialog-title").inner_text() == ("구글 일정 가져오기" if language == "ko" else "Import Google Calendar events")
+            assert_image_proportions(page, "#dialog-image")
+            page.keyboard.press("Escape")
+            page.wait_for_function("!document.body.classList.contains('modal-open')")
+        page.locator("#google-calendar a[href*='data.html']").click()
+        assert page.url.endswith("lang=en#google-import")
+        assert page.locator("#google-import h2").inner_text() == "06 · Google Calendar import"
+        checks.append("Google import: hero anchor, bilingual image enlargement and language-preserving data link")
         page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
         page.locator(".hero-buttons a[href='#share']").click()
         assert page.url.endswith("#share")
@@ -91,6 +108,14 @@ def main():
         checks.append("English preference survives reload and propagates to internal links")
         page.goto(f"{args.base_url}/guide.html?lang=en",wait_until="networkidle")
         assert page.locator(".gallery-card").count() == image_count
+        page.locator("[data-filter='calendar']").click()
+        page.locator("#gallery-search").fill("Google")
+        assert page.locator(".gallery-card").count() == 1
+        page.locator(".gallery-card button").click()
+        assert urlsplit(page.locator("#dialog-image").get_attribute("src")).path.endswith("49-google-calendar-import.png")
+        page.keyboard.press("Escape")
+        page.locator("#gallery-search").fill("")
+        checks.append("Google import screenshot is searchable in the Calendar category and opens at full size")
         page.locator("[data-filter='ai']").click()
         assert page.locator(".gallery-card").count() == 4
         page.locator("[data-filter='share']").click()

@@ -1,6 +1,6 @@
 {
-  "created": "2026-10-15",
-  "screenshot_count": 48,
+  "created": "2026-10-19",
+  "screenshot_count": 49,
   "ui_locale": "ko",
   "text_locales": [
     "ko",
@@ -22,15 +22,15 @@
   },
   "launcher_shortcut": {
     "shortcut_label": "문자 붙여넣기",
-    "app_label": "키즈캘린더",
+    "app_label": "키즈캘",
     "visible": true,
     "device": "emulator-5668",
     "source": "Android 36 emulator Pixel Launcher; physical launcher unverified",
-    "sha256": "ed8703f1d1142374ee640381484e520777500c5f9692c22dca34f238fd9729f3"
+    "sha256": "684d43aa550e3cf48f7dc8c883d9d625662b910abeb25206bb34aea5416bfeb2"
   },
   "source_package": "homepage-menu-images-20261004",
-  "updated": "2026-10-15",
-  "png_count": 48,
+  "updated": "2026-10-19",
+  "png_count": 49,
   "images": [
     {
       "id": "01-calendar",
@@ -48,13 +48,13 @@
         "zh": "日历"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 캘린더",
+        "ko": "키즈캘 앱 화면: 캘린더",
         "en": "Kids Calendar screen: Calendar",
         "ja": "キッズカレンダーの画面：カレンダー",
         "zh": "儿童日历界面：日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/01-calendar.png",
-      "sha256": "441770646d8a52fb771f1edee3a9b9470cbed25825c85c6f35e0cc411ef1c52b",
+      "sha256": "76b1f8a6ed02c4b66724e8f50d310319d904f9e30f1db4ff10fe2b55996e90e5",
       "synthetic_data_only": true,
       "file": "images/01-calendar.png"
     },
@@ -74,13 +74,13 @@
         "zh": "收集箱"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 카톡 수집",
+        "ko": "키즈캘 앱 화면: 카톡 수집",
         "en": "Kids Calendar screen: Inbox",
         "ja": "キッズカレンダーの画面：受信ボックス",
         "zh": "儿童日历界面：收集箱"
       },
       "source": "deliverables/user-guide-images-20261004/images/12-inbox.png",
-      "sha256": "bdc31630951eaf55cc936d8c51d014b0ecdd9d712f72f2197cb0490f37110b64",
+      "sha256": "f8abee3e800b969e22c657ee37adc242c2194fe11e7bc12cadb938a5849885ec",
       "synthetic_data_only": true,
       "file": "images/02-inbox.png"
     },
@@ -100,13 +100,13 @@
         "zh": "日程简报"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 브리핑",
+        "ko": "키즈캘 앱 화면: 브리핑",
         "en": "Kids Calendar screen: Briefing",
         "ja": "キッズカレンダーの画面：予定一覧",
         "zh": "儿童日历界面：日程简报"
       },
       "source": "deliverables/user-guide-images-20261004/images/17-today-briefing.png",
-      "sha256": "eb343a23715a16db1ffff487e25de15e85fad62cdb60507e29fbd832c7d2e2cf",
+      "sha256": "c788f0fb8dfc7bc1dbf083130571f334503c6fa4e8e9f9c0c1a85154d6702c7d",
       "synthetic_data_only": true,
       "file": "images/03-briefing.png"
     },
@@ -126,13 +126,13 @@
         "zh": "添加日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 추가",
+        "ko": "키즈캘 앱 화면: 일정 추가",
         "en": "Kids Calendar screen: Add an event",
         "ja": "キッズカレンダーの画面：予定を追加",
         "zh": "儿童日历界面：添加日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/02-add-menu.png",
-      "sha256": "372890388e180e5a8296e32e7225d9f998e5ea8b04f1e126f6c5b725393c5c7a",
+      "sha256": "c63a3f22e7c4405daf99cd9696ddef4c2f1a7fadb2e9693c8a155b23d7cbc882",
       "synthetic_data_only": true,
       "file": "images/04-add-menu.png"
     },
@@ -152,13 +152,13 @@
         "zh": "手动输入"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 직접 입력",
+        "ko": "키즈캘 앱 화면: 직접 입력",
         "en": "Kids Calendar screen: Manual entry",
         "ja": "キッズカレンダーの画面：手動入力",
         "zh": "儿童日历界面：手动输入"
       },
       "source": "deliverables/user-guide-images-20261004/images/10-manual-entry.png",
-      "sha256": "932d35dc600949f6b5c79f39477ec54718a2e034fc2a2ba74bdc050fbd9a22db",
+      "sha256": "71dfd595ccd0224f61b5592d6d53fb56aded90c42d323ba1fa8a818e66d7a205",
       "synthetic_data_only": true,
       "file": "images/05-manual-entry.png"
     },
@@ -178,13 +178,13 @@
         "zh": "从照片导入"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 사진 등록",
+        "ko": "키즈캘 앱 화면: 사진 등록",
         "en": "Kids Calendar screen: Photo import",
         "ja": "キッズカレンダーの画面：写真から登録",
         "zh": "儿童日历界面：从照片导入"
       },
       "source": "deliverables/user-guide-images-20261004/images/26-photo-candidates.png",
-      "sha256": "258a88cbfd2f0a63379647d7ee4e543130301bc42dc90d395b1c306fba1d5420",
+      "sha256": "58facf53af04d9ae21975600954c5cea7422d5efe925ce43216f7abb0047f48c",
       "synthetic_data_only": true,
       "file": "images/06-photo-import.png"
     },
@@ -204,13 +204,13 @@
         "zh": "确认多个日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 여러 일정 확인",
+        "ko": "키즈캘 앱 화면: 여러 일정 확인",
         "en": "Kids Calendar screen: Review multiple events",
         "ja": "キッズカレンダーの画面：複数の予定を確認",
         "zh": "儿童日历界面：确认多个日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/28-multiple-candidates.png",
-      "sha256": "9fdc4a1eddccf2902fceebb057c4ebef2e22a0679dfe4e2d813075cf43220be7",
+      "sha256": "638c609e02e7571432ba26caca4ba8699d517d28cc6eea8c31bc589583f330db",
       "synthetic_data_only": true,
       "file": "images/07-candidate-review.png"
     },
@@ -230,13 +230,13 @@
         "zh": "日程详情"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 상세",
+        "ko": "키즈캘 앱 화면: 일정 상세",
         "en": "Kids Calendar screen: Event details",
         "ja": "キッズカレンダーの画面：予定の詳細",
         "zh": "儿童日历界面：日程详情"
       },
       "source": "deliverables/user-guide-images-20261004/images/06-event-detail.png",
-      "sha256": "101228cb8c324356bd75eeac5621b0df68e13abdebb7897c69533b229dc70705",
+      "sha256": "3771d93ded264b67c8fd0526f3e44b2eca3a03c6e6bc450be48ba4c6ef5fd3a1",
       "synthetic_data_only": true,
       "file": "images/08-event-detail.png"
     },
@@ -256,13 +256,13 @@
         "zh": "准备清单"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 준비물",
+        "ko": "키즈캘 앱 화면: 준비물",
         "en": "Kids Calendar screen: Checklist",
         "ja": "キッズカレンダーの画面：持ち物",
         "zh": "儿童日历界面：准备清单"
       },
       "source": "deliverables/user-guide-images-20261004/images/07-checklist.png",
-      "sha256": "483a62219517d16ddda75bef684b93e297fa8e0ebad131694b245491f6347eb3",
+      "sha256": "af3927ec6675cf066e4b44a157a1f3bc17fdd15da6bc1d5f5130a0ecdaea3f5f",
       "synthetic_data_only": true,
       "file": "images/09-checklist.png"
     },
@@ -282,13 +282,13 @@
         "zh": "分享日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 공유",
+        "ko": "키즈캘 앱 화면: 일정 공유",
         "en": "Kids Calendar screen: Share an event",
         "ja": "キッズカレンダーの画面：予定を共有",
         "zh": "儿童日历界面：分享日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/08-share-preview.png",
-      "sha256": "96f1c07ddb3b006b3aa756f51c1fe47ed28f4703df21e5eaba4fcf98dc2476eb",
+      "sha256": "e9ce5ef88fa6f48b8da82136fb65bf981c52bfd0b40e3af3c5044cdf484bbfba",
       "synthetic_data_only": true,
       "file": "images/10-share.png"
     },
@@ -308,7 +308,7 @@
         "zh": "设置"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 설정",
+        "ko": "키즈캘 앱 화면: 설정",
         "en": "Kids Calendar screen: Settings",
         "ja": "キッズカレンダーの画面：設定",
         "zh": "儿童日历界面：设置"
@@ -334,7 +334,7 @@
         "zh": "AI填写日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: AI로 일정 채우기",
+        "ko": "키즈캘 앱 화면: AI로 일정 채우기",
         "en": "Kids Calendar screen: AI event entry",
         "ja": "キッズカレンダーの画面：AIで予定を入力",
         "zh": "儿童日历界面：AI填写日程"
@@ -360,7 +360,7 @@
         "zh": "服务AI设置"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 서비스 AI 안내",
+        "ko": "키즈캘 앱 화면: 서비스 AI 안내",
         "en": "Kids Calendar screen: Service AI settings",
         "ja": "キッズカレンダーの画面：サービスAI設定",
         "zh": "儿童日历界面：服务AI设置"
@@ -386,13 +386,13 @@
         "zh": "AI隐私同意"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: AI 개인정보 처리 동의",
+        "ko": "키즈캘 앱 화면: AI 개인정보 처리 동의",
         "en": "Kids Calendar screen: AI privacy consent",
         "ja": "キッズカレンダーの画面：AI個人情報の同意",
         "zh": "儿童日历界面：AI隐私同意"
       },
       "source": "deliverables/user-guide-images-20261004/images/24-service-ai-consent.png",
-      "sha256": "77419bc0b8756d78d35990840a9f5593f9acb7dbaf18d98fa52a170781b3488c",
+      "sha256": "2d88347e610698facfe6402d781909ef18fab024c17353a8838ad002cb53162e",
       "synthetic_data_only": true,
       "file": "images/14-service-ai-consent.png"
     },
@@ -412,7 +412,7 @@
         "zh": "基本文本分析"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 기본 텍스트 분석",
+        "ko": "키즈캘 앱 화면: 기본 텍스트 분석",
         "en": "Kids Calendar screen: Basic text analysis",
         "ja": "キッズカレンダーの画面：基本テキスト解析",
         "zh": "儿童日历界面：基本文本分析"
@@ -438,13 +438,13 @@
         "zh": "KakaoTalk消息收集"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 카카오톡 모아보기",
+        "ko": "키즈캘 앱 화면: 카카오톡 모아보기",
         "en": "Kids Calendar screen: KakaoTalk collection",
         "ja": "キッズカレンダーの画面：KakaoTalkのメッセージ収集",
         "zh": "儿童日历界面：KakaoTalk消息收集"
       },
       "source": "deliverables/user-guide-images-20261004/images/15-kakao-settings.png",
-      "sha256": "960f64bb566dd81df43c2044411e57f4a6d60f350e379d84b9bacb462826c2ce",
+      "sha256": "077bd8d55e7f7bd111270a699acadd70f6ff3f86f123b643e0831294df78f7d0",
       "synthetic_data_only": true,
       "file": "images/16-kakao-settings.png"
     },
@@ -464,13 +464,13 @@
         "zh": "聊天室和发送者筛选"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 채팅방·발신자 필터",
+        "ko": "키즈캘 앱 화면: 채팅방·발신자 필터",
         "en": "Kids Calendar screen: Chat and sender filters",
         "ja": "キッズカレンダーの画面：チャット・送信者フィルター",
         "zh": "儿童日历界面：聊天室和发送者筛选"
       },
       "source": "deliverables/user-guide-images-20261004/images/16-kakao-filter.png",
-      "sha256": "46064535aec3a8b9ef7f644d01a987f43d871d80f1585adff8c871551fabacd9",
+      "sha256": "c957982ee424a7242e3f398ba874f61f755731e9191d699e1a3ca9b5238b8e95",
       "synthetic_data_only": true,
       "file": "images/17-kakao-filter.png"
     },
@@ -490,7 +490,7 @@
         "zh": "日程提醒"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 일정 알림",
+        "ko": "키즈캘 앱 화면: 일정 알림",
         "en": "Kids Calendar screen: Reminders",
         "ja": "キッズカレンダーの画面：予定の通知",
         "zh": "儿童日历界面：日程提醒"
@@ -516,7 +516,7 @@
         "zh": "界面设计"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 화면 디자인",
+        "ko": "키즈캘 앱 화면: 화면 디자인",
         "en": "Kids Calendar screen: Appearance",
         "ja": "キッズカレンダーの画面：画面デザイン",
         "zh": "儿童日历界面：界面设计"
@@ -542,7 +542,7 @@
         "zh": "公共假日"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 공휴일",
+        "ko": "키즈캘 앱 화면: 공휴일",
         "en": "Kids Calendar screen: Public holidays",
         "ja": "キッズカレンダーの画面：祝日",
         "zh": "儿童日历界面：公共假日"
@@ -568,7 +568,7 @@
         "zh": "已保存的消息"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 보관한 메시지",
+        "ko": "키즈캘 앱 화면: 보관한 메시지",
         "en": "Kids Calendar screen: Stored messages",
         "ja": "キッズカレンダーの画面：保存したメッセージ",
         "zh": "儿童日历界面：已保存的消息"
@@ -594,13 +594,13 @@
         "zh": "快速文本录入"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 문자 빠른 입력",
+        "ko": "키즈캘 앱 화면: 문자 빠른 입력",
         "en": "Kids Calendar screen: Quick text entry",
         "ja": "キッズカレンダーの画面：テキストから登録",
         "zh": "儿童日历界面：快速文本录入"
       },
       "source": "deliverables/user-guide-images-20261004/images/29-text-entry.png",
-      "sha256": "ad3bba3ea77bb0cdcf75c94ffd75f6c822622f29678f7758644ce3172554591f",
+      "sha256": "268d0a029fb20d0c092a1ff73b898134d83c365aef21e433f56456e7dcde29c8",
       "synthetic_data_only": true,
       "file": "images/22-text-entry.png"
     },
@@ -620,13 +620,13 @@
         "zh": "确认粘贴的日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 문자로 채운 일정",
+        "ko": "키즈캘 앱 화면: 문자로 채운 일정",
         "en": "Kids Calendar screen: Review pasted text",
         "ja": "キッズカレンダーの画面：貼り付けた予定を確認",
         "zh": "儿童日历界面：确认粘贴的日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/30-text-review.png",
-      "sha256": "96b4ba7d3a9641d98d5a26050127f92aabfdf57560f230d40dde1afeac593191",
+      "sha256": "f91dc89daac1f880094c45aabe1f635e1e54e7a51db6bac0099ed8e9cdc6c0e4",
       "synthetic_data_only": true,
       "file": "images/23-text-review.png"
     },
@@ -646,13 +646,13 @@
         "zh": "编辑原文"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 원문 수정",
+        "ko": "키즈캘 앱 화면: 원문 수정",
         "en": "Kids Calendar screen: Edit source text",
         "ja": "キッズカレンダーの画面：原文を編集",
         "zh": "儿童日历界面：编辑原文"
       },
       "source": "deliverables/user-guide-images-20261004/images/31-source-edit.png",
-      "sha256": "9df9e23eea241d5535b9378c7c9787a9bd9a2d28a2b056888cf05fec2c01183e",
+      "sha256": "d7d4084f0645e19669fb8a0ac64f446efaa2c81188fde2ec775a941e3b52dd84",
       "synthetic_data_only": true,
       "file": "images/24-source-edit.png"
     },
@@ -672,13 +672,13 @@
         "zh": "提醒权限"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 알림 권한 안내",
+        "ko": "키즈캘 앱 화면: 알림 권한 안내",
         "en": "Kids Calendar screen: Reminder permissions",
         "ja": "キッズカレンダーの画面：通知の権限",
         "zh": "儿童日历界面：提醒权限"
       },
       "source": "deliverables/user-guide-images-20261004/images/32-reminder-permissions.png",
-      "sha256": "a4bbca5564aac06c53faca2da728581ab02229187386156f77eb032e274f6834",
+      "sha256": "23a0a0607ae35e63ccbf691c8ffd4996df61056752e03b2a836496ba2ce2a866",
       "synthetic_data_only": true,
       "file": "images/25-reminder-permissions.png"
     },
@@ -698,13 +698,13 @@
         "zh": "保留当前草稿"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 작성 중인 일정 보호",
+        "ko": "키즈캘 앱 화면: 작성 중인 일정 보호",
         "en": "Kids Calendar screen: Keep your current draft",
         "ja": "キッズカレンダーの画面：入力中の予定を保持",
         "zh": "儿童日历界面：保留当前草稿"
       },
       "source": "deliverables/user-guide-images-20261004/images/33-text-replace-confirmation.png",
-      "sha256": "3decb48b817b7b21f4640f223309ce5e153cc1f123d6ecb3e688324750e99014",
+      "sha256": "15b371e7fd94eba4d98055a2326f8e2320eadd78673762e117900093eef925fc",
       "synthetic_data_only": true,
       "file": "images/26-text-replace-confirmation.png"
     },
@@ -724,13 +724,13 @@
         "zh": "照片录入说明"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 사진 등록 안내",
+        "ko": "키즈캘 앱 화면: 사진 등록 안내",
         "en": "Kids Calendar screen: Photo entry requirements",
         "ja": "キッズカレンダーの画面：写真登録の案内",
         "zh": "儿童日历界面：照片录入说明"
       },
       "source": "deliverables/user-guide-images-20261004/images/03-photo-ai-charge.png",
-      "sha256": "9a06826dd3d8246992d06ce576284d43c8819921699d371ed406cbf40a48d0ed",
+      "sha256": "a32ed4f2cef2485e2f5b82864de00f9c3d07ed7475c038e1fc3df2a29e397caf",
       "synthetic_data_only": true,
       "file": "images/27-photo-ai-charge.png"
     },
@@ -750,13 +750,13 @@
         "zh": "放弃草稿前确认"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 저장 전 닫기 확인",
+        "ko": "키즈캘 앱 화면: 저장 전 닫기 확인",
         "en": "Kids Calendar screen: Confirm before discarding",
         "ja": "キッズカレンダーの画面：保存前の終了確認",
         "zh": "儿童日历界面：放弃草稿前确认"
       },
       "source": "deliverables/user-guide-images-20261004/images/36-discard-confirmation.png",
-      "sha256": "a3ed8772b49b2b89a649043563f5dda73dbec5f823fda64f37d72aad2e597b2f",
+      "sha256": "0d5001394957769d56d3caa69fa010d0469f1d7ebd8ae3911c289d3f623e3b05",
       "synthetic_data_only": true,
       "file": "images/28-discard-confirmation.png"
     },
@@ -776,13 +776,13 @@
         "zh": "查看原文"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 가져온 문자 보기",
+        "ko": "키즈캘 앱 화면: 가져온 문자 보기",
         "en": "Kids Calendar screen: View source text",
         "ja": "キッズカレンダーの画面：原文を表示",
         "zh": "儿童日历界面：查看原文"
       },
       "source": "deliverables/user-guide-images-20261004/images/37-text-original.png",
-      "sha256": "1fc81427618bb4ada710ae1def175e81be18b838f7be3e312d571780647d7a8b",
+      "sha256": "fcf44d518a0e6935d95835f72b74ee892d53dc4ac9de211a892474355c9fa9c5",
       "synthetic_data_only": true,
       "file": "images/29-text-original.png"
     },
@@ -802,13 +802,13 @@
         "zh": "粘贴文本快捷方式"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 문자 붙여넣기 바로가기",
+        "ko": "키즈캘 앱 화면: 문자 붙여넣기 바로가기",
         "en": "Kids Calendar screen: Paste text shortcut",
         "ja": "キッズカレンダーの画面：テキスト貼り付けショートカット",
         "zh": "儿童日历界面：粘贴文本快捷方式"
       },
       "source": "deliverables/user-guide-images-20261004/images/38-launcher-shortcut.png",
-      "sha256": "ed8703f1d1142374ee640381484e520777500c5f9692c22dca34f238fd9729f3",
+      "sha256": "684d43aa550e3cf48f7dc8c883d9d625662b910abeb25206bb34aea5416bfeb2",
       "synthetic_data_only": true,
       "file": "images/30-launcher-shortcut.png"
     },
@@ -828,13 +828,13 @@
         "zh": "日程候选详情"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 후보 확인·수정 · 추가 항목",
+        "ko": "키즈캘 앱 화면: 후보 확인·수정 · 추가 항목",
         "en": "Kids Calendar screen: Candidate details",
         "ja": "キッズカレンダーの画面：予定候補の詳細",
         "zh": "儿童日历界面：日程候选详情"
       },
       "source": "deliverables/user-guide-images-20261004/images/39-candidate-details.png",
-      "sha256": "b612fda9af54f6a54c66c8219bf11a8bc326f9c3b1e69f64864643742fbba0d0",
+      "sha256": "3f3d960c22f3ad94c6db6c6dd02cca72119634f53ae8d10765829b917b0f2ee3",
       "synthetic_data_only": true,
       "file": "images/31-candidate-details.png"
     },
@@ -854,13 +854,13 @@
         "zh": "编辑日程候选"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 후보 확인·수정 · 기본 항목",
+        "ko": "키즈캘 앱 화면: 후보 확인·수정 · 기본 항목",
         "en": "Kids Calendar screen: Edit a candidate",
         "ja": "キッズカレンダーの画面：予定候補を編集",
         "zh": "儿童日历界面：编辑日程候选"
       },
       "source": "deliverables/user-guide-images-20261004/images/40-candidate-edit.png",
-      "sha256": "bc5fe0b9c893b388ab8ecf14271022c925bbc26fe9162ef70ed918be7c91a520",
+      "sha256": "e4ff5c76fa0fd2f5bc457e82395dab62d70b7cbaa2b38b8fb371befe2c0418a3",
       "synthetic_data_only": true,
       "file": "images/32-candidate-edit.png"
     },
@@ -880,13 +880,13 @@
         "zh": "从消息分享至应用"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 문자·카톡에서 공유",
+        "ko": "키즈캘 앱 화면: 문자·카톡에서 공유",
         "en": "Kids Calendar screen: Share messages into the app",
         "ja": "キッズカレンダーの画面：メッセージから共有",
         "zh": "儿童日历界面：从消息分享至应用"
       },
       "source": "deliverables/user-guide-images-20261004/images/41-share-text.png",
-      "sha256": "88f613deba2ff36de5b567987902a65d4184306cc402c87af7800e8bb8624fd6",
+      "sha256": "ddcf8998560364d5e97dff1fa2c9a4541d49e2d492844546ebc21b7e194b1759",
       "synthetic_data_only": true,
       "file": "images/33-share-text.png"
     },
@@ -906,13 +906,13 @@
         "zh": "从照片分享至应用"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 사진에서 공유",
+        "ko": "키즈캘 앱 화면: 사진에서 공유",
         "en": "Kids Calendar screen: Share a photo into the app",
         "ja": "キッズカレンダーの画面：写真から共有",
         "zh": "儿童日历界面：从照片分享至应用"
       },
       "source": "deliverables/user-guide-images-20261004/images/42-share-image.png",
-      "sha256": "ab7a1f5e90135c9f73b250a01b06ade287bca2caafe2381219209c60855d867a",
+      "sha256": "5599077d83e01474d8dc3592b9b694c494c8b72bf9deba08c966fbe91883a4c1",
       "synthetic_data_only": true,
       "file": "images/34-share-image.png"
     },
@@ -932,13 +932,13 @@
         "zh": "确认分享的日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 공유한 일정 확인",
+        "ko": "키즈캘 앱 화면: 공유한 일정 확인",
         "en": "Kids Calendar screen: Review shared events",
         "ja": "キッズカレンダーの画面：共有した予定を確認",
         "zh": "儿童日历界面：确认分享的日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/43-shared-text-review.png",
-      "sha256": "ea1f97d4a28f28ac9548fbe30ce54f046624751e5dad3084b4270430445764ca",
+      "sha256": "646168d4dafad7ce94078b6d7eb448db0878690c761a16dbe1b1b5654a96019e",
       "synthetic_data_only": true,
       "file": "images/35-shared-text-review.png"
     },
@@ -958,13 +958,13 @@
         "zh": "会员昵称"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 회원 별명 설정",
+        "ko": "키즈캘 앱 화면: 회원 별명 설정",
         "en": "Kids Calendar screen: Member nickname",
         "ja": "キッズカレンダーの画面：会員ニックネーム",
         "zh": "儿童日历界面：会员昵称"
       },
       "source": "deliverables/user-guide-images-20261004/images/44-nickname.png",
-      "sha256": "09b71286ff68f058a74d09b1ebb893c8dd6ed0ba82f6f23ce1834bd2597dc7b0",
+      "sha256": "4bcdef179b32f1da5364081051d3237618cb787a1ae7b0ac824a9522308e67b9",
       "synthetic_data_only": true,
       "file": "images/36-nickname.png"
     },
@@ -984,13 +984,13 @@
         "zh": "会员与订阅"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 회원·구독",
+        "ko": "키즈캘 앱 화면: 회원·구독",
         "en": "Kids Calendar screen: Membership",
         "ja": "キッズカレンダーの画面：会員・利用プラン",
         "zh": "儿童日历界面：会员与订阅"
       },
       "source": "deliverables/user-guide-images-20261004/images/45-membership.png",
-      "sha256": "9ac4c890fb883f0df2bdf69e3e06b44d6773554d34b9a707dde466e0ceba00fc",
+      "sha256": "9a923712466d2a3f93a38d747694e6a19daabda29377982fc9b8eae0b00e13ed",
       "synthetic_data_only": true,
       "file": "images/37-membership.png"
     },
@@ -1010,13 +1010,13 @@
         "zh": "选择日历"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 캘린더 선택",
+        "ko": "키즈캘 앱 화면: 캘린더 선택",
         "en": "Kids Calendar screen: Calendar selection",
         "ja": "キッズカレンダーの画面：カレンダー選択",
         "zh": "儿童日历界面：选择日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/46-calendar-selector.png",
-      "sha256": "9f42501a78141a9f4ae285d0dc5128386030ead8281ab2d427a95aa93eb9dfba",
+      "sha256": "171b82f56b210da474c4bc4b2cfe985d147972790e64ffcc940b77f876950b4f",
       "synthetic_data_only": true,
       "file": "images/38-calendar-selector.png"
     },
@@ -1036,13 +1036,13 @@
         "zh": "我的日历与共享"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 내 캘린더·공유",
+        "ko": "키즈캘 앱 화면: 내 캘린더·공유",
         "en": "Kids Calendar screen: My calendars and sharing",
         "ja": "キッズカレンダーの画面：マイカレンダー・共有",
         "zh": "儿童日历界面：我的日历与共享"
       },
       "source": "deliverables/user-guide-images-20261004/images/47-calendar-management.png",
-      "sha256": "800db748bb4211b99eea1cfbdf9ebd919de1258a53a1222295b082587098e3d2",
+      "sha256": "8a205b06742d15ee7ba515dab3aa4b67a4057d40d07196503df6185702371088",
       "synthetic_data_only": true,
       "file": "images/39-calendar-management.png"
     },
@@ -1062,13 +1062,13 @@
         "zh": "创建共享日历"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 공유 캘린더 만들기",
+        "ko": "키즈캘 앱 화면: 공유 캘린더 만들기",
         "en": "Kids Calendar screen: Create a shared calendar",
         "ja": "キッズカレンダーの画面：共有カレンダー作成",
         "zh": "儿童日历界面：创建共享日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/48-shared-calendar-create.png",
-      "sha256": "4c819dac81e3b8dd2b261cfa91bc6fa9523d6478bbd87301b1f22b34e3ea4361",
+      "sha256": "6826d063c95da7cb633f2db8027a908f432459ca1cf5d55cff522ee14e833183",
       "synthetic_data_only": true,
       "file": "images/40-shared-calendar-create.png"
     },
@@ -1088,13 +1088,13 @@
         "zh": "家庭共享日历"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 가족 공유 캘린더",
+        "ko": "키즈캘 앱 화면: 가족 공유 캘린더",
         "en": "Kids Calendar screen: Family calendar",
         "ja": "キッズカレンダーの画面：家族共有カレンダー",
         "zh": "儿童日历界面：家庭共享日历"
       },
       "source": "deliverables/user-guide-images-20261004/images/49-family-calendar.png",
-      "sha256": "2b85f8658563d65e5c68ef51864d8e14e86f96e0e024425b304adbe4813d53f6",
+      "sha256": "e0b3890315f8731e453b26cebbd2729c788e5fc8ca74ebc39bfacccee00de2a6",
       "synthetic_data_only": true,
       "file": "images/41-family-calendar.png"
     },
@@ -1114,13 +1114,13 @@
         "zh": "共享成员"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 공유 멤버",
+        "ko": "키즈캘 앱 화면: 공유 멤버",
         "en": "Kids Calendar screen: Calendar members",
         "ja": "キッズカレンダーの画面：共有メンバー",
         "zh": "儿童日历界面：共享成员"
       },
       "source": "deliverables/user-guide-images-20261004/images/50-family-members.png",
-      "sha256": "99452fc41dfff3a1d8c48a7b3cd1a31d8d03b4293ea35cbb2f0da04c5ad81a05",
+      "sha256": "351547a1987b65564723c34fe535b62b87367ac0fbbb41d6b7b77df867675fd0",
       "synthetic_data_only": true,
       "file": "images/42-family-members.png"
     },
@@ -1140,13 +1140,13 @@
         "zh": "邀请家人"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 가족 초대",
+        "ko": "키즈캘 앱 화면: 가족 초대",
         "en": "Kids Calendar screen: Invite family",
         "ja": "キッズカレンダーの画面：家族を招待",
         "zh": "儿童日历界面：邀请家人"
       },
       "source": "deliverables/user-guide-images-20261004/images/51-family-invite.png",
-      "sha256": "99452fc41dfff3a1d8c48a7b3cd1a31d8d03b4293ea35cbb2f0da04c5ad81a05",
+      "sha256": "351547a1987b65564723c34fe535b62b87367ac0fbbb41d6b7b77df867675fd0",
       "synthetic_data_only": true,
       "file": "images/43-family-invite.png"
     },
@@ -1166,13 +1166,13 @@
         "zh": "确认AI日程"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: AI 문자 일정 확인",
+        "ko": "키즈캘 앱 화면: AI 문자 일정 확인",
         "en": "Kids Calendar screen: Review AI events",
         "ja": "キッズカレンダーの画面：AI予定を確認",
         "zh": "儿童日历界面：确认AI日程"
       },
       "source": "deliverables/user-guide-images-20261004/images/52-ai-text-review.png",
-      "sha256": "338ee6ea4d71c7e3acdb1239b91f9f8f2561f55a31d491af81df4b01a8c68ba4",
+      "sha256": "32d835daed8f2bb7d2925bf951256fb2f37085ddcf6b2b97cc54927f22b71af9",
       "synthetic_data_only": true,
       "file": "images/44-ai-text-review.png"
     },
@@ -1192,13 +1192,13 @@
         "zh": "重复设置"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 반복 선택",
+        "ko": "키즈캘 앱 화면: 반복 선택",
         "en": "Kids Calendar screen: Repeat settings",
         "ja": "キッズカレンダーの画面：繰り返し設定",
         "zh": "儿童日历界面：重复设置"
       },
       "source": "deliverables/user-guide-images-20261004/images/53-candidate-repeat.png",
-      "sha256": "e93d245aa35e68571cb495b86745e6d78b7704ce40e497a0c2f8edac75016150",
+      "sha256": "5c591f7a62ea5526562dcc194095afbc98dbcfaebf964a5f1e37244ea84748e8",
       "synthetic_data_only": true,
       "file": "images/45-candidate-repeat.png"
     },
@@ -1218,13 +1218,13 @@
         "zh": "提醒设置"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 알림 선택",
+        "ko": "키즈캘 앱 화면: 알림 선택",
         "en": "Kids Calendar screen: Reminder settings",
         "ja": "キッズカレンダーの画面：通知設定",
         "zh": "儿童日历界面：提醒设置"
       },
       "source": "deliverables/user-guide-images-20261004/images/54-candidate-reminder.png",
-      "sha256": "c3ddd586ccbf60614639eb2d42a23a44983f889c17ef0b50a042ef40e31ef0c1",
+      "sha256": "fa8dddf1c618f756af9f9065ecc156b15f74d8d0ee938f60a532b59db26f7ece",
       "synthetic_data_only": true,
       "file": "images/46-candidate-reminder.png"
     },
@@ -1244,13 +1244,13 @@
         "zh": "日程分类"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 분류 선택",
+        "ko": "키즈캘 앱 화면: 분류 선택",
         "en": "Kids Calendar screen: Event category",
         "ja": "キッズカレンダーの画面：予定の分類",
         "zh": "儿童日历界面：日程分类"
       },
       "source": "deliverables/user-guide-images-20261004/images/55-candidate-category.png",
-      "sha256": "b8fa7f7b87bc666aa1111db0d9bf80d015f6c7dffea96b3f823fa64878097012",
+      "sha256": "2761988c046fa1ffe2450d5af11c898e4d47bf560a0b9833e410d0c2b40109da",
       "synthetic_data_only": true,
       "file": "images/47-candidate-category.png"
     },
@@ -1270,7 +1270,7 @@
         "zh": "界面颜色"
       },
       "alt": {
-        "ko": "키즈캘린더 앱 화면: 화면 색상",
+        "ko": "키즈캘 앱 화면: 화면 색상",
         "en": "Kids Calendar screen: App colors",
         "ja": "キッズカレンダーの画面：画面のカラー",
         "zh": "儿童日历界面：界面颜色"
@@ -1279,6 +1279,32 @@
       "sha256": "1fb14b6710c545472ed97e9c20e6af9714953c27332de5bf1111f77e4a926025",
       "synthetic_data_only": true,
       "file": "images/48-color-picker.png"
+    },
+    {
+      "id": "49-google-calendar-import",
+      "group": "settings",
+      "type": "native-app-screenshot",
+      "ui_locale": "ko",
+      "width": 1170,
+      "height": 2532,
+      "png": "png/49-google-calendar-import.png",
+      "webp": "webp/49-google-calendar-import.webp",
+      "title": {
+        "ko": "구글 일정 가져오기",
+        "en": "Import Google Calendar events",
+        "ja": "Googleカレンダーの予定を取り込む",
+        "zh": "导入Google日历日程"
+      },
+      "alt": {
+        "ko": "키즈캘 앱 화면: 구글 일정 가져오기",
+        "en": "Kids Calendar screen: Import Google Calendar events",
+        "ja": "キッズカレンダーの画面：Googleカレンダーの予定を取り込む",
+        "zh": "儿童日历界面：导入Google日历日程"
+      },
+      "source": "deliverables/user-guide-images-20261004/images/57-google-calendar-import.png",
+      "sha256": "97627cd216bc135ba349832b11cfbffde8b91c418f82ab44d83d08b6ad31e03f",
+      "synthetic_data_only": true,
+      "file": "images/49-google-calendar-import.png"
     }
   ]
 }
