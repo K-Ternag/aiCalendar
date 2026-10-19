@@ -52,7 +52,7 @@ def main():
                 checks.append(f"Homepage {language}, {width}px: no horizontal overflow; original image proportions")
         page.set_viewport_size({"width":1440,"height":1000})
         page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
-        page.locator(".hero-update").click()
+        page.locator(".main-nav a[href='#google-calendar']").click()
         assert page.url.endswith("#google-calendar")
         for language in ("ko", "en"):
             page.locator(f"[data-language='{language}']").click()
@@ -66,7 +66,7 @@ def main():
         page.locator("#google-calendar a[href*='data.html']").click()
         assert page.url.endswith("lang=en#google-import")
         assert page.locator("#google-import h2").inner_text() == "06 · Google Calendar import"
-        checks.append("Google import: hero anchor, bilingual image enlargement and language-preserving data link")
+        checks.append("Google import: navigation anchor, bilingual image enlargement and language-preserving data link")
         page.goto(f"{args.base_url}/index.html?lang=ko",wait_until="networkidle")
         page.locator(".hero-buttons a[href='#share']").click()
         assert page.url.endswith("#share")

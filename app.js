@@ -5,7 +5,6 @@
     onboardingBody:"Complete Kakao sign-up or sign-in, set a nickname and choose whether to use AI. The app then guides you on the calendar itself. Choose Start without AI to use basic text analysis and manual entry. Shared input resumes after membership setup.",
     onboardingTitle:"Start with Kakao sign-in",
     navGoogle:"Google Calendar import",
-    heroGoogle:"New · Bring your Google Calendar events →",
     googleEyebrow:"From Google Calendar to Kids Calendar",
     googleTitle:"Plans you already have.<br><em>In your family calendar.</em>",
     googleLead:"Choose Google events synced to your device<br>and copy them into a personal or shared calendar.<br>Keep school plans and family appointments together.",
