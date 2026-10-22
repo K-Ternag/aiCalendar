@@ -98,3 +98,16 @@ python scripts\browser_gate.py --base-url file:///D:/personalAppHome
 ```
 
 이 검사는 320·390·768·1024·1440px 화면, 이미지 원본 비율 유지, 한·영 전환 유지, 기능 탭의 키보드 조작, 이미지 확대, 검색·분류와 모바일 메뉴를 확인합니다. 성공하면 `artifacts/`에 검사 결과와 캡처를 저장합니다.
+
+
+## 2026년 10월 20일 개인정보처리방침
+
+`privacy.html`과 `delete-account.html`에 한·영 개인정보처리방침과 이메일 삭제 요청 안내를 추가했습니다. 홈페이지 하단과 기존 데이터 안내에서 연결하며 배포 `dist/`와 ZIP에도 포함합니다. 유나테크·greatryuhg@gmail.com을 운영자와 문의 창구로 사용합니다.
+
+현재 문서는 **운영 반영 검토본**입니다. 서버·앱 로컬 변경과 검사 결과가 준비됐으며, Supabase 운영 연결 재인증, 실제 로그·백업·저장 리전 확인, 서버 적용과 공개 배포 후 시행일을 확정해야 합니다. 검토본을 운영 반영 완료 문서로 제출하지 않습니다.
+
+예정 URL: `https://k-ternag.github.io/aiCalendar/privacy.html`, `https://k-ternag.github.io/aiCalendar/delete-account.html`.
+
+인접 저장소 변경은 `scripts/stage_privacy_changes.py`의 해시 검사를 거쳐 적용합니다. 서버 정식 소스와 운영 안내는 `D:/personalApp-admin`에서 관리합니다. 운영 DB와 실제 회원 데이터는 이번 로컬 검사에서 변경하지 않았습니다.
+
+추가 검사: `python scripts/privacy_browser_gate.py`, `node scripts/test_privacy_database.mjs`. DB 검사는 기존 로컬 PGlite 도구와 서버 저장소가 필요하며 운영 DB에 연결하지 않습니다. 한·영 원고의 기준은 `scripts/write_privacy_pages.py`입니다.

@@ -6,7 +6,7 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 
 def main():
-    files = [ROOT / name for name in ("index.html", "guide.html", "data.html", "styles.css", "app.js", ".nojekyll", ".gitignore", "README.md", "신청서_영문소개.txt")]
+    files = [ROOT / name for name in ("index.html", "guide.html", "data.html", "privacy.html", "delete-account.html", "styles.css", "app.js", ".nojekyll", ".gitignore", "README.md", "신청서_영문소개.txt")]
     for directory in ("assets", "scripts", ".github"):
         files.extend(path for path in (ROOT / directory).rglob("*") if path.is_file() and "__pycache__" not in path.parts)
     output = ROOT / "kids-calendar-homepage.zip"

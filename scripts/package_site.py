@@ -3,7 +3,7 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_FILES = ("index.html", "guide.html", "data.html", "styles.css", "app.js", ".nojekyll")
+PUBLIC_FILES = ("index.html", "guide.html", "data.html", "privacy.html", "delete-account.html", "styles.css", "app.js", ".nojekyll")
 
 def main():
     output = ROOT / "dist"
