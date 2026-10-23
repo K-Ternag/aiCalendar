@@ -104,10 +104,10 @@ python scripts\browser_gate.py --base-url file:///D:/personalAppHome
 
 `privacy.html`과 `delete-account.html`에 한·영 개인정보처리방침과 이메일 삭제 요청 안내를 추가했습니다. 홈페이지 하단과 기존 데이터 안내에서 연결하며 배포 `dist/`와 ZIP에도 포함합니다. 유나테크·greatryuhg@gmail.com을 운영자와 문의 창구로 사용합니다.
 
-현재 문서는 **운영 반영 검토본**입니다. 서버·앱 로컬 변경과 검사 결과가 준비됐으며, Supabase 운영 연결 재인증, 실제 로그·백업·저장 리전 확인, 서버 적용과 공개 배포 후 시행일을 확정해야 합니다. 검토본을 운영 반영 완료 문서로 제출하지 않습니다.
+2026-10-23 시행 문서로 정리했습니다. 운영 서버의 동의 v3·삭제·보관 정책은 2026-10-21 적용됐고, 2026-10-23 조회에서 정기 정리 실행을 확인했습니다. 운영자 확인 요금제는 Supabase Free이며 API·DB 호스팅 로그는 1일, DB 저장 리전은 일본 도쿄(ap-northeast-1)입니다. Free에는 운영자가 복구에 사용할 수 있는 자동 백업·PITR이 포함되지 않습니다. 서비스 DB 운영 기록 90일과 플랫폼 로그 1일을 구분합니다.
 
-예정 URL: `https://k-ternag.github.io/aiCalendar/privacy.html`, `https://k-ternag.github.io/aiCalendar/delete-account.html`.
+공개 URL: `https://k-ternag.github.io/aiCalendar/privacy.html`, `https://k-ternag.github.io/aiCalendar/delete-account.html`.
 
-인접 저장소 변경은 `scripts/stage_privacy_changes.py`의 해시 검사를 거쳐 적용합니다. 서버 정식 소스와 운영 안내는 `D:/personalApp-admin`에서 관리합니다. 운영 DB와 실제 회원 데이터는 이번 로컬 검사에서 변경하지 않았습니다.
+정식 서버 계약은 `D:/personalApp-admin/docs/privacy-retention.md`, 앱 출시 점검과 검증은 `D:/personalApp/docs/release-readiness-2026-10-23.md`와 `artifacts/release-fixes-20261023/`에서 관리합니다. 법률 검토 완료나 별도 백업·복구 검증 완료를 의미하지 않습니다.
 
 추가 검사: `python scripts/privacy_browser_gate.py`, `node scripts/test_privacy_database.mjs`. DB 검사는 기존 로컬 PGlite 도구와 서버 저장소가 필요하며 운영 DB에 연결하지 않습니다. 한·영 원고의 기준은 `scripts/write_privacy_pages.py`입니다.
